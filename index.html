@@ -1,382 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#111827">
-  <title>you knoowww — Discover · Compare · Choose</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<title>you knoowww — Discover · Compare · Choose</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070b1d;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+    height: 76px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: rgba(7,11,29,0.92);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.logo .white {
+    color: white;
+}
+
+.logo .blue {
+    color: #6ed8ff;
+}
+
+.logo .purple {
+    color: #c77dff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #dce3ff;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    color: #c77dff;
+}
+
+.nav-button {
+    padding: 11px 19px;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#635bff,#d36bff);
+    color: white !important;
+    font-weight: bold;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 100px;
+    overflow: hidden;
+}
+
+.glow-one,
+.glow-two,
+.glow-three {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.glow-one {
+    width: 360px;
+    height: 360px;
+    background: #5548ff;
+    top: 50px;
+    left: -100px;
+}
+
+.glow-two {
+    width: 350px;
+    height: 350px;
+    background: #e85cff;
+    right: -100px;
+    top: 150px;
+}
+
+.glow-three {
+    width: 240px;
+    height: 240px;
+    background: #00cfff;
+    left: 42%;
+    bottom: -100px;
+}
+
+.hero-content {
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid rgba(160,130,255,0.5);
+    border-radius: 30px;
+    background: rgba(116,91,255,0.10);
+    color: #d8d1ff;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    font-size: clamp(52px, 8vw, 94px);
+    line-height: 0.98;
+    letter-spacing: -5px;
+    font-weight: 900;
+}
+
+.hero h1 .gradient {
+    background: linear-gradient(90deg,#7edcff,#8c6cff,#e77dff,#ff9acb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 28px auto 38px;
+    color: #aeb8d7;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* ---------- SEARCH ---------- */
+
+.search-box {
+    max-width: 690px;
+    margin: auto;
+    display: flex;
+    padding: 7px;
+    background: rgba(255,255,255,0.97);
+    border-radius: 18px;
+    box-shadow: 0 15px 60px rgba(93,75,255,0.25);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 18px;
+    font-size: 15px;
+    color: #18203d;
+    background: transparent;
+}
+
+.search-box button {
+    border: none;
+    border-radius: 14px;
+    padding: 0 28px;
+    background: linear-gradient(90deg,#5b5cff,#c75cff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------- TRUST STRIP ---------- */
+
+.trust {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    color: #aeb8d7;
+    font-size: 13px;
+}
+
+.trust span {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.trust b {
+    color: #8eeaff;
+}
+
+/* ---------- CATEGORIES ---------- */
+
+.categories-section {
+    background: #f7f8ff;
+    color: #10162c;
+    padding: 90px 6%;
+}
+
+.section-top {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.small-title {
+    color: #765cff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.section-top h2 {
+    font-size: 43px;
+    letter-spacing: -2px;
+}
+
+.section-top h2 span {
+    color: #765cff;
+}
+
+.section-top p {
+    color: #68708c;
+    margin-top: 12px;
+}
+
+.category-grid {
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 17px;
+}
+
+.category {
+    min-height: 150px;
+    border-radius: 22px;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(56,52,100,0.12);
+}
+
+.category-icon {
+    font-size: 35px;
+}
+
+.category h3 {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.category p {
+    font-size: 11px;
+    color: #717891;
+    margin-top: 5px;
+}
+
+.c1 { background: #e2f2ff; }
+.c2 { background: #ffe8f5; }
+.c3 { background: #e4f9ef; }
+.c4 { background: #f3eaff; }
+.c5 { background: #def8fa; }
+.c6 { background: #eee9ff; }
+.c7 { background: #fff2dc; }
+.c8 { background: #e9f0ff; }
+.c9 { background: #ffe9ed; }
+.c10 { background: #eee9ff; }
+
+/* ---------- WHY SECTION ---------- */
+
+.why {
+    padding: 100px 7%;
+    background: #070b1d;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-content {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.why h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.why h2 span {
+    color: #c77dff;
+}
+
+.why-intro {
+    color: #9da8c9;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.features {
+    display: grid;
+    gap: 17px;
+}
+
+.feature {
+    padding: 22px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(255,255,255,0.07);
+}
+
+.feature-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.feature p {
+    color: #8f99b8;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ---------- COMPARE CTA ---------- */
+
+.compare {
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg,#101633,#24134a);
+}
+
+.compare h2 {
+    font-size: 46px;
+    letter-spacing: -2px;
+}
+
+.compare h2 span {
+    background: linear-gradient(90deg,#75e5ff,#dc7dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.compare p {
+    color: #aeb8d7;
+    max-width: 620px;
+    margin: 17px auto 30px;
+    line-height: 1.7;
+}
+
+.compare-button {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#635bff,#dc69ff);
+    font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 45px 7%;
+    background: #050816;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.footer-text {
+    color: #77819f;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    color: #9ba5c2;
+    font-size: 13px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 35px;
+    padding-top: 20px;
+    color: #606a86;
+    font-size: 11px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f8fc;
-      color: #111827;
+    .why-content {
+        grid-template-columns: 1fr;
     }
 
-    header {
-      background: #111827;
-      color: white;
-      padding: 18px 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+    .nav-links {
+        gap: 15px;
     }
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-
-    .logo span {
-      color: #7dd3fc;
-    }
-
+@media (max-width: 600px) {
     nav {
-      display: flex;
-      gap: 22px;
+        padding: 0 5%;
     }
 
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: white;
+    .nav-links a:not(.nav-button) {
+        display: none;
     }
 
     .hero {
-      padding: 75px 6% 55px;
-      text-align: center;
-      background: linear-gradient(135deg, #eef2ff, #f8fafc);
-    }
-
-    .badge {
-      display: inline-block;
-      background: white;
-      border: 1px solid #e5e7eb;
-      padding: 7px 14px;
-      border-radius: 30px;
-      font-size: 13px;
-      margin-bottom: 20px;
+        padding-top: 65px;
     }
 
     .hero h1 {
-      font-size: clamp(40px, 7vw, 72px);
-      line-height: 1;
-      letter-spacing: -3px;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 span {
-      color: #4f46e5;
-    }
-
-    .hero p {
-      max-width: 620px;
-      margin: auto;
-      color: #64748b;
-      font-size: 17px;
-      line-height: 1.6;
+        font-size: 55px;
+        letter-spacing: -3px;
     }
 
     .search-box {
-      max-width: 650px;
-      margin: 30px auto 0;
-      display: flex;
-      background: white;
-      border: 1px solid #dbe1ea;
-      border-radius: 16px;
-      padding: 7px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-    }
-
-    .search-box input {
-      flex: 1;
-      border: none;
-      outline: none;
-      padding: 14px;
-      font-size: 15px;
-      background: transparent;
+        flex-direction: column;
+        background: white;
+        padding: 7px;
     }
 
     .search-box button {
-      border: none;
-      background: #111827;
-      color: white;
-      padding: 0 22px;
-      border-radius: 11px;
-      cursor: pointer;
-      font-weight: 600;
+        height: 50px;
     }
 
-    .section {
-      padding: 55px 6%;
-      max-width: 1250px;
-      margin: auto;
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 30px;
+    .section-top h2,
+    .why h2,
+    .compare h2 {
+        font-size: 36px;
     }
 
-    .section-title h2 {
-      font-size: 30px;
-      margin-bottom: 8px;
+    .trust {
+        gap: 20px;
     }
-
-    .section-title p {
-      color: #64748b;
-    }
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-      gap: 15px;
-    }
-
-    .category {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 25px 15px;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .category:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-    }
-
-    .category-icon {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .category h3 {
-      font-size: 15px;
-    }
-
-    .category p {
-      color: #94a3b8;
-      font-size: 12px;
-      margin-top: 5px;
-    }
-
-    .why {
-      background: #111827;
-      color: white;
-      border-radius: 25px;
-      padding: 45px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-    }
-
-    .why-item h3 {
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    .why-item p {
-      color: #cbd5e1;
-      line-height: 1.5;
-      font-size: 14px;
-    }
-
-    footer {
-      background: #0b1120;
-      color: #94a3b8;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 13px;
-    }
-
-    @media (max-width: 650px) {
-      header {
-        padding: 15px 5%;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        padding: 55px 5% 45px;
-      }
-
-      .search-box button {
-        padding: 0 15px;
-      }
-
-      .why {
-        padding: 30px 25px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">you <span>knoowww</span></div>
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">
+        <span class="white">you</span>
+        <span class="blue"> kn</span><span class="purple">oowww</span>
+    </div>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#categories">Categories</a>
-      <a href="#about">About</a>
-    </nav>
-  </header>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#why">Why us?</a>
+        <a href="#about" class="nav-button">About</a>
+    </div>
+</nav>
 
-  <main>
 
-    <section class="hero">
-      <div class="badge">✦ Know before you buy</div>
+<!-- HERO -->
+<section class="hero">
 
-      <h1>Discover.<br><span>Compare.</span><br>Choose.</h1>
+    <div class="glow-one"></div>
+    <div class="glow-two"></div>
+    <div class="glow-three"></div>
 
-      <p>
-        Explore products, understand what you're buying,
-        compare your options and make smarter choices.
-      </p>
+    <div class="hero-content">
 
-      <div class="search-box">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search for a product or brand..."
-        >
-        <button onclick="searchProduct()">Search</button>
-      </div>
-    </section>
+        <div class="badge">✦ Know the product. Know your choice.</div>
 
-    <section class="section" id="categories">
+        <h1>
+            Discover.<br>
+            <span class="gradient">Compare.</span><br>
+            Choose.
+        </h1>
 
-      <div class="section-title">
-        <h2>Explore Categories</h2>
-        <p>Find products across the things you use every day.</p>
-      </div>
+        <p>
+            Explore products, understand what you're buying,
+            compare your options and make smarter choices —
+            all in one place.
+        </p>
 
-      <div class="categories">
-
-        <div class="category">
-          <div class="category-icon">👕</div>
-          <h3>Clothing</h3>
-          <p>Explore apparel</p>
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search for a product, brand or category..."
+            >
+            <button>Search →</button>
         </div>
 
-        <div class="category">
-          <div class="category-icon">👟</div>
-          <h3>Footwear</h3>
-          <p>Shoes & sneakers</p>
+        <div class="trust">
+            <span>✦ <b>Product Knowledge</b></span>
+            <span>◇ <b>Clear Comparisons</b></span>
+            <span>✧ <b>Global Categories</b></span>
+            <span>◎ <b>Smarter Choices</b></span>
         </div>
 
-        <div class="category">
-          <div class="category-icon">💄</div>
-          <h3>Cosmetics</h3>
-          <p>Beauty products</p>
+    </div>
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="categories-section" id="categories">
+
+    <div class="section-top">
+        <div class="small-title">Explore</div>
+        <h2>Find your world of <span>products.</span></h2>
+        <p>From everyday essentials to things you've always wanted to understand.</p>
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category c1">
+            <div class="category-icon">💻</div>
+            <div>
+                <h3>Electronics</h3>
+                <p>Devices & technology</p>
+            </div>
         </div>
 
-        <div class="category">
-          <div class="category-icon">📱</div>
-          <h3>Electronics</h3>
-          <p>Tech & gadgets</p>
+        <div class="category c2">
+            <div class="category-icon">👗</div>
+            <div>
+                <h3>Fashion</h3>
+                <p>Clothing & style</p>
+            </div>
         </div>
 
-        <div class="category">
-          <div class="category-icon">🍫</div>
-          <h3>Food & Beverages</h3>
-          <p>Food products</p>
+        <div class="category c3">
+            <div class="category-icon">🏠</div>
+            <div>
+                <h3>Home & Living</h3>
+                <p>Make your space yours</p>
+            </div>
         </div>
 
-        <div class="category">
-          <div class="category-icon">🧴</div>
-          <h3>Personal Care</h3>
-          <p>Everyday care</p>
+        <div class="category c4">
+            <div class="category-icon">💄</div>
+            <div>
+                <h3>Beauty</h3>
+                <p>Beauty products & care</p>
+            </div>
         </div>
 
-        <div class="category">
-          <div class="category-icon">🏠</div>
-          <h3>Home & Kitchen</h3>
-          <p>Home essentials</p>
+        <div class="category c5">
+            <div class="category-icon">🩺</div>
+            <div>
+                <h3>Health & Wellness</h3>
+                <p>Everyday wellness</p>
+            </div>
         </div>
 
-        <div class="category">
-          <div class="category-icon">🎒</div>
-          <h3>Bags & Accessories</h3>
-          <p>Carry & style</p>
+        <div class="category c6">
+            <div class="category-icon">🏸</div>
+            <div>
+                <h3>Sports & Outdoors</h3>
+                <p>Move & explore</p>
+            </div>
         </div>
 
-        <div class="category">
-          <div class="category-icon">⚽</div>
-          <h3>Sports</h3>
-          <p>Sports products</p>
+        <div class="category c7">
+            <div class="category-icon">🍜</div>
+            <div>
+                <h3>Food & Beverages</h3>
+                <p>Discover what you consume</p>
+            </div>
         </div>
 
-      </div>
-    </section>
-
-    <section class="section" id="about">
-
-      <div class="why">
-
-        <div class="why-item">
-          <h3>🔎 Discover</h3>
-          <p>Explore products and brands from different categories.</p>
+        <div class="category c8">
+            <div class="category-icon">📚</div>
+            <div>
+                <h3>Books</h3>
+                <p>Read & discover</p>
+            </div>
         </div>
 
-        <div class="why-item">
-          <h3>📖 Know</h3>
-          <p>Understand product features, materials, ingredients and more.</p>
+        <div class="category c9">
+            <div class="category-icon">🧴</div>
+            <div>
+                <h3>Personal Care</h3>
+                <p>Everyday essentials</p>
+            </div>
         </div>
 
-        <div class="why-item">
-          <h3>⚖️ Compare</h3>
-          <p>Put products side by side and understand their differences.</p>
+        <div class="category c10">
+            <div class="category-icon">👜</div>
+            <div>
+                <h3>Bags & Accessories</h3>
+                <p>Details that matter</p>
+            </div>
         </div>
 
-        <div class="why-item">
-          <h3>✓ Choose</h3>
-          <p>Make a more informed decision before buying.</p>
+    </div>
+</section>
+
+
+<!-- WHY YOU KNOOWWW -->
+<section class="why" id="why">
+
+    <div class="why-content">
+
+        <div>
+            <div class="small-title">The idea</div>
+
+            <h2>
+                Don't just buy.<br>
+                <span>Know first.</span>
+            </h2>
+
+            <p class="why-intro">
+                Shopping shouldn't begin with a purchase.
+                It should begin with understanding.
+                you knoowww helps you discover products,
+                learn what makes them different and compare
+                your options without the noise.
+            </p>
         </div>
 
-      </div>
+        <div class="features">
 
-    </section>
+            <div class="feature">
+                <div class="feature-icon">🔎</div>
+                <h3>Understand the product</h3>
+                <p>
+                    Learn what a product is, what it does,
+                    what it's made of and what to consider.
+                </p>
+            </div>
 
-  </main>
+            <div class="feature">
+                <div class="feature-icon">⚖️</div>
+                <h3>Compare clearly</h3>
+                <p>
+                    See meaningful differences between
+                    products instead of confusing information.
+                </p>
+            </div>
 
-  <footer>
-    © 2026 you knoowww · Discover · Compare · Choose
-  </footer>
+            <div class="feature">
+                <div class="feature-icon">🌍</div>
+                <h3>Built for everyone</h3>
+                <p>
+                    Explore products and categories from
+                    different lifestyles and markets around the world.
+                </p>
+            </div>
 
-  <script>
-    function searchProduct() {
-      const input = document.getElementById("searchInput").value.trim();
+            <div class="feature">
+                <div class="feature-icon">✨</div>
+                <h3>Make your own choice</h3>
+                <p>
+                    We give you knowledge — the final decision
+                    stays yours.
+                </p>
+            </div>
 
-      if (input === "") {
-        alert("Please enter a product or brand.");
-        return;
-      }
+        </div>
 
-      alert("Search system coming next: " + input);
-    }
-  </script>
+    </div>
+</section>
+
+
+<!-- COMPARE CTA -->
+<section class="compare">
+
+    <h2>
+        Curious about two products?
+        <span>Compare them.</span>
+    </h2>
+
+    <p>
+        Put products side by side, understand the differences
+        and discover which one fits your needs better.
+    </p>
+
+    <a href="#categories" class="compare-button">
+        Start Exploring →
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="about">
+
+    <div class="footer-main">
+
+        <div>
+            <div class="footer-logo">
+                you knoowww
+            </div>
+
+            <div class="footer-text">
+                Discover · Compare · Choose
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#why">Why us?</a>
+            <a href="#about">About</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 you knoowww · Know More. Choose Better.
+    </div>
+
+</footer>
 
 </body>
 </html>
