@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Categories — you knoowww</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #070b19;
+    --card: #10162a;
+    --text: #f7f8ff;
+    --muted: #9da7c0;
+    --border: rgba(255,255,255,0.09);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 8% 18%, rgba(86,78,255,0.18), transparent 28%),
+        radial-gradient(circle at 92% 20%, rgba(222,82,255,0.14), transparent 27%),
+        var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* NAVIGATION */
+
+nav {
+    height: 76px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    background: rgba(7,11,25,0.78);
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #75cfff,
+        #a978ff,
+        #f18bdc
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #cbd2e5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links .active {
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    max-width: 1050px;
+    margin: auto;
+    padding: 95px 7% 70px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 9px 17px;
+    border: 1px solid rgba(167,139,250,0.32);
+    border-radius: 50px;
+    background: rgba(167,139,250,0.07);
+    color: #c6b5ff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 72px);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    background: linear-gradient(
+        90deg,
+        #69d5ff,
+        #8c82ff,
+        #e778ff,
+        #ff9bd8
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 24px auto 0;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* CATEGORY GRID */
+
+.categories-section {
+    max-width: 1120px;
+    margin: auto;
+    padding: 10px 7% 100px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.category {
+    position: relative;
+    min-height: 190px;
+    padding: 27px;
+    border-radius: 22px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.065),
+            rgba(255,255,255,0.025)
+        );
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.category::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -45px;
+    bottom: -45px;
+    background: rgba(145,125,255,0.13);
+    filter: blur(25px);
+    border-radius: 50%;
+}
+
+.category:hover {
+    transform: translateY(-6px);
+    border-color: rgba(177,154,255,0.38);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 24px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.category h2 {
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.category p {
+    color: #8d98b1;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* CATEGORY COLORS */
+
+.c1 .icon { color: #79d9ff; }
+.c2 .icon { color: #b89cff; }
+.c3 .icon { color: #ff9fd9; }
+.c4 .icon { color: #ffd88a; }
+.c5 .icon { color: #7ee7d5; }
+.c6 .icon { color: #9eb4ff; }
+.c7 .icon { color: #ffb5c8; }
+.c8 .icon { color: #d3a4ff; }
+.c9 .icon { color: #8de0ff; }
+.c10 .icon { color: #a6f0b8; }
+.c11 .icon { color: #ffc18d; }
+.c12 .icon { color: #d7dbea; }
+
+/* BOTTOM CTA */
+
+.cta {
+    max-width: 900px;
+    margin: 0 auto 100px;
+    padding: 65px 30px;
+    text-align: center;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(130,100,255,0.16),
+            transparent 48%
+        ),
+        rgba(255,255,255,0.025);
+}
+
+.cta h2 {
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+.cta p {
+    max-width: 570px;
+    margin: 15px auto 27px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.cta a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7568ff, #d05cff);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 7%;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    color: #737e97;
+    font-size: 12px;
+}
+
+.footer-logo {
+    color: white;
+    font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 75px 5% 55px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .categories-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .nav-links a:nth-child(3) {
+        display: none;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html" class="logo">
+        you knoowww
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="index.html#why">Why us?</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="badge">Explore the library</div>
+
+    <h1>
+        Everything you<br>
+        <span>might want to know.</span>
+    </h1>
+
+    <p>
+        Explore products across different categories and discover
+        useful information before making your choice.
+    </p>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories-section">
+
+    <div class="categories">
+
+        <div class="category c1">
+            <div class="icon">✦</div>
+            <h2>Clothing</h2>
+            <p>Explore styles, materials, sizes and useful product details.</p>
+        </div>
+
+        <div class="category c2">
+            <div class="icon">◈</div>
+            <h2>Footwear</h2>
+            <p>Discover shoes, sneakers and everyday footwear information.</p>
+        </div>
+
+        <div class="category c3">
+            <div class="icon">◇</div>
+            <h2>Beauty & Cosmetics</h2>
+            <p>Understand ingredients, features and product characteristics.</p>
+        </div>
+
+        <div class="category c4">
+            <div class="icon">○</div>
+            <h2>Food & Beverages</h2>
+            <p>Explore ingredients, variants and important product information.</p>
+        </div>
+
+        <div class="category c5">
+            <div class="icon">⌁</div>
+            <h2>Electronics</h2>
+            <p>Understand specifications, features and everyday use cases.</p>
+        </div>
+
+        <div class="category c6">
+            <div class="icon">⌂</div>
+            <h2>Home & Kitchen</h2>
+            <p>Discover useful information about everyday household products.</p>
+        </div>
+
+        <div class="category c7">
+            <div class="icon">♡</div>
+            <h2>Personal Care</h2>
+            <p>Explore everyday hygiene and personal-care products.</p>
+        </div>
+
+        <div class="category c8">
+            <div class="icon">✧</div>
+            <h2>Bags & Accessories</h2>
+            <p>Discover bags, accessories and everyday essentials.</p>
+        </div>
+
+        <div class="category c9">
+            <div class="icon">△</div>
+            <h2>Sports</h2>
+            <p>Explore products for sports, fitness and active lifestyles.</p>
+        </div>
+
+        <div class="category c10">
+            <div class="icon">☼</div>
+            <h2>Health & Wellness</h2>
+            <p>Explore wellness, hygiene and everyday health-related products.</p>
+        </div>
+
+        <div class="category c11">
+            <div class="icon">♡</div>
+            <h2>Baby Care</h2>
+            <p>Discover everyday products designed for babies and families.</p>
+        </div>
+
+        <div class="category c12">
+            <div class="icon">＋</div>
+            <h2>More</h2>
+            <p>More categories can be added as the product library grows.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>Know the product. Know your choice.</h2>
+
+    <p>
+        Our product library will make it easier to understand,
+        explore and compare products in one place.
+    </p>
+
+    <a href="index.html">
+        Back to home
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        you knoowww
+    </div>
+
+    <div>
+        Discover · Compare · Choose
+    </div>
+
+    <div>
+        © 2026 you knoowww
+    </div>
+
+</footer>
+
+</body>
+</html>
