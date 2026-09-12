@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover the Nike Air Max 270 — features, materials, merits, demerits and more on you knoowww.">
+
+    <title>Nike Air Max 270 | you knoowww</title>
+
+    <style>
+        :root {
+            --navy: #080d1c;
+            --navy2: #0d1428;
+            --text: #f5f7ff;
+            --muted: #aab3c9;
+            --border: rgba(255,255,255,0.11);
+
+            --blue: #4f8cff;
+            --purple: #8b5cf6;
+            --pink: #ec5fc7;
+            --cyan: #42d8e8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--navy);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            width: 100%;
+            padding: 22px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+            background: rgba(8,13,28,0.94);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(
+                90deg,
+                var(--blue),
+                var(--purple),
+                var(--pink)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        /* PAGE */
+
+        .page {
+            width: 86%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 0 80px;
+        }
+
+        .back {
+            display: inline-block;
+            color: var(--muted);
+            margin-bottom: 35px;
+            font-size: 14px;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        /* PRODUCT HERO */
+
+        .product-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+            margin-bottom: 55px;
+        }
+
+        .product-image {
+            min-height: 450px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+
+            background:
+                radial-gradient(
+                    circle at 25% 20%,
+                    rgba(79,140,255,0.25),
+                    transparent 45%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(236,95,199,0.18),
+                    transparent 45%
+                ),
+                var(--navy2);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 88%;
+            max-height: 410px;
+            object-fit: contain;
+            filter: drop-shadow(
+                0 25px 35px rgba(0,0,0,0.45)
+            );
+        }
+
+        .category-label {
+            display: inline-block;
+            padding: 7px 13px;
+            border-radius: 50px;
+
+            background: rgba(79,140,255,0.13);
+            border: 1px solid rgba(79,140,255,0.25);
+
+            color: #9fc0ff;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 5vw, 64px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 12px;
+        }
+
+        .brand {
+            color: var(--cyan);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .short-description {
+            color: var(--muted);
+            font-size: 17px;
+            max-width: 520px;
+        }
+
+        /* GENERAL SECTIONS */
+
+        .section {
+            margin-top: 30px;
+            padding: 32px;
+
+            border-radius: 24px;
+            border: 1px solid var(--border);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(79,140,255,0.08),
+                    rgba(139,92,246,0.05)
+                );
+        }
+
+        .section h2 {
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+
+        .section p {
+            color: var(--muted);
+        }
+
+        /* FEATURES */
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            padding: 18px;
+            border-radius: 17px;
+
+            background: rgba(255,255,255,0.045);
+            border: 1px solid var(--border);
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .feature span {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* PROS AND CONS */
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .pros,
+        .cons {
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+        }
+
+        .pros {
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(66,216,232,0.10),
+                    rgba(79,140,255,0.05)
+                );
+        }
+
+        .cons {
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(236,95,199,0.10),
+                    rgba(139,92,246,0.05)
+                );
+        }
+
+        .pros h2 {
+            color: var(--cyan);
+        }
+
+        .cons h2 {
+            color: #ed8cdb;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: var(--muted);
+        }
+
+        li {
+            margin: 9px 0;
+        }
+
+        /* TWO COLUMNS */
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        /* SIMILAR PRODUCTS */
+
+        .similar-products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .similar-card {
+            padding: 20px;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.04);
+        }
+
+        .similar-card strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .similar-card span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* COMPARE */
+
+        .compare {
+            margin-top: 30px;
+            padding: 35px;
+
+            border-radius: 25px;
+            text-align: center;
+
+            border: 1px solid rgba(139,92,246,0.3);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(79,140,255,0.10),
+                    rgba(139,92,246,0.12),
+                    rgba(236,95,199,0.08)
+                );
+        }
+
+        .compare h2 {
+            margin-bottom: 10px;
+        }
+
+        .compare p {
+            color: var(--muted);
+            margin-bottom: 22px;
+        }
+
+        .compare-button {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 50px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--blue),
+                    var(--purple),
+                    var(--pink)
+                );
+
+            color: white;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 70px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                gap: 14px;
+                font-size: 12px;
+            }
+
+            .product-hero,
+            .pros-cons,
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image {
+                min-height: 330px;
+            }
+
+            .feature-grid,
+            .similar-products {
+                grid-template-columns: 1fr;
+            }
+
+            .page {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            you knoowww
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="index.html#why-us">Why us?</a>
+        </div>
+
+    </nav>
+
+
+    <main class="page">
+
+        <a href="categories.html" class="back">
+            ← Back to Categories
+        </a>
+
+
+        <!-- PRODUCT HERO -->
+
+        <section class="product-hero">
+
+            <div class="product-image">
+
+                <img
+                    src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/air-max-270.png"
+                    alt="Nike Air Max 270"
+                >
+
+            </div>
+
+
+            <div>
+
+                <span class="category-label">
+                    Footwear
+                </span>
+
+                <h1>
+                    Nike Air Max 270
+                </h1>
+
+                <div class="brand">
+                    Nike
+                </div>
+
+                <p class="short-description">
+                    A lifestyle sneaker known for its large visible Air unit,
+                    cushioned feel and distinctive everyday design.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT OVERVIEW -->
+
+        <section class="section">
+
+            <h2>
+                📌 Product Overview
+            </h2>
+
+            <p>
+                The Nike Air Max 270 is a lifestyle sneaker from Nike's
+                Air Max family. It combines a casual sneaker design with
+                visible Air cushioning and is designed primarily for
+                everyday lifestyle use.
+            </p>
+
+        </section>
+
+
+        <!-- KEY FEATURES -->
+
+        <section class="section">
+
+            <h2>
+                ✨ Key Features
+            </h2>
+
+            <div class="feature-grid">
+
+                <div class="feature">
+                    <strong>
+                        Visible Air cushioning
+                    </strong>
+
+                    <span>
+                        Features a large visible Air unit in the heel.
+                    </span>
+                </div>
+
+
+                <div class="feature">
+                    <strong>
+                        Everyday design
+                    </strong>
+
+                    <span>
+                        Designed as a lifestyle sneaker for casual use.
+                    </span>
+                </div>
+
+
+                <div class="feature">
+                    <strong>
+                        Breathable upper
+                    </strong>
+
+                    <span>
+                        Uses a lightweight textile-based upper construction.
+                    </span>
+                </div>
+
+
+                <div class="feature">
+                    <strong>
+                        Distinctive silhouette
+                    </strong>
+
+                    <span>
+                        Recognisable high-volume heel design.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MATERIALS -->
+
+        <section class="section">
+
+            <h2>
+                🧵 Materials
+            </h2>
+
+            <p>
+                The shoe uses a combination of textile and synthetic materials
+                in its upper and rubber components in the outsole. Materials
+                can vary between specific releases and colourways.
+            </p>
+
+        </section>
+
+
+        <!-- SIZES AND VARIANTS -->
+
+        <section class="section">
+
+            <h2>
+                📏 Sizes & Variants
+            </h2>
+
+            <p>
+                The Nike Air Max 270 has been released in multiple colourways
+                and sizing options. Exact availability can vary by region,
+                release and version.
+            </p>
+
+        </section>
+
+
+        <!-- MERITS AND DEMERITS -->
+
+        <div class="pros-cons">
+
+            <div class="pros">
+
+                <h2>
+                    ✅ Merits
+                </h2>
+
+                <ul>
+                    <li>
+                        Large visible Air cushioning gives the shoe a distinctive design.
+                    </li>
+
+                    <li>
+                        Suitable for everyday casual wear.
+                    </li>
+
+                    <li>
+                        Available in a wide range of colourways.
+                    </li>
+
+                    <li>
+                        Recognisable Air Max styling.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="cons">
+
+                <h2>
+                    ⚠️ Demerits
+                </h2>
+
+                <ul>
+                    <li>
+                        Not designed specifically as a performance running shoe.
+                    </li>
+
+                    <li>
+                        The large heel unit may not suit everyone's preferred style.
+                    </li>
+
+                    <li>
+                        Materials and construction can vary between versions.
+                    </li>
+
+                    <li>
+                        Fit preference can differ from person to person.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- BEST FOR + THINGS TO CONSIDER -->
+
+        <div class="two-column">
+
+            <section class="section">
+
+                <h2>
+                    🎯 Best For
+                </h2>
+
+                <p>
+                    Casual everyday wear, lifestyle outfits, walking around
+                    town and people who prefer a noticeable sneaker design.
+                </p>
+
+            </section>
+
+
+            <section class="section">
+
+                <h2>
+                    🔎 Things to Consider
+                </h2>
+
+                <p>
+                    Consider the intended use, preferred fit, available size,
+                    colourway and whether a lifestyle sneaker meets your needs.
+                </p>
+
+            </section>
+
+        </div>
+
+
+        <!-- SIMILAR PRODUCTS -->
+
+        <section class="section">
+
+            <h2>
+                🔄 Similar Products
+            </h2>
+
+            <div class="similar-products">
+
+                <div class="similar-card">
+                    <strong>
+                        Nike Air Max 90
+                    </strong>
+
+                    <span>
+                        Classic Air Max lifestyle sneaker.
+                    </span>
+                </div>
+
+
+                <div class="similar-card">
+                    <strong>
+                        Nike Air Max 1
+                    </strong>
+
+                    <span>
+                        Original-inspired Air Max lifestyle design.
+                    </span>
+                </div>
+
+
+                <div class="similar-card">
+                    <strong>
+                        Nike Air Max 95
+                    </strong>
+
+                    <span>
+                        Distinctive layered Air Max design.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPARE -->
+
+        <section class="compare">
+
+            <h2>
+                ⚖️ Compare this product
+            </h2>
+
+            <p>
+                Compare the Nike Air Max 270 with another product
+                to understand their differences.
+            </p>
+
+            <button class="compare-button">
+                Compare with another product
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 you knoowww · Know the product before you choose it.
+    </footer>
+
+</body>
+</html>
