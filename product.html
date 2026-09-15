@@ -743,5 +743,289 @@
         © 2026 you knoowww · Know the product before you choose it.
     </footer>
 
+<script src="products.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const productId =
+        params.get("product") || "nike-air-max-270";
+
+    const product = window.products.find(
+        item => item.id === productId
+    );
+
+    if (!product) {
+        return;
+    }
+
+    /* PAGE TITLE */
+
+    document.title = `${product.name} | you knoowww`;
+
+    const metaDescription =
+        document.querySelector('meta[name="description"]');
+
+    if (metaDescription) {
+        metaDescription.content =
+            `Discover the ${product.name} — features, materials, merits, demerits and more on you knoowww.`;
+    }
+
+    /* HERO */
+
+    const image =
+        document.querySelector(".product-image img");
+
+    const category =
+        document.querySelector(".category-label");
+
+    const title =
+        document.querySelector(".product-hero h1");
+
+    const brand =
+        document.querySelector(".brand");
+
+    const description =
+        document.querySelector(".short-description");
+
+    if (category) {
+        category.textContent = product.category;
+    }
+
+    if (title) {
+        title.textContent = product.name;
+    }
+
+    if (brand) {
+        brand.textContent = product.brand;
+    }
+
+    if (description) {
+        description.textContent = product.description;
+    }
+
+    if (image && product.image) {
+        image.src = product.image;
+        image.alt = product.name;
+    }
+
+    /* FIND SECTION */
+
+    function getSection(name) {
+        return [...document.querySelectorAll(".section")]
+            .find(section => {
+                const heading = section.querySelector("h2");
+
+                return heading &&
+                    heading.textContent
+                        .toLowerCase()
+                        .includes(name.toLowerCase());
+            });
+    }
+
+    /* OVERVIEW */
+
+    const overview = getSection("Product Overview");
+
+    if (overview) {
+        const p = overview.querySelector("p");
+
+        if (p) {
+            p.textContent = product.overview;
+        }
+    }
+
+    /* FEATURES */
+
+    const features = getSection("Key Features");
+
+    if (features) {
+
+        const grid =
+            features.querySelector(".feature-grid");
+
+        if (grid) {
+
+            grid.innerHTML = "";
+
+            product.keyFeatures.forEach(
+                (feature, index) => {
+
+                    const card =
+                        document.createElement("div");
+
+                    card.className = "feature";
+
+                    card.innerHTML = `
+                        <strong>Feature ${index + 1}</strong>
+                        <span>${feature}</span>
+                    `;
+
+                    grid.appendChild(card);
+                }
+            );
+        }
+    }
+
+    /* MATERIAL */
+
+    const material = getSection("Materials");
+
+    if (material) {
+
+        const p = material.querySelector("p");
+
+        if (p) {
+            p.textContent = product.material;
+        }
+    }
+
+    /* SIZE */
+
+    const sizes = getSection("Sizes & Variants");
+
+    if (sizes) {
+
+        const p = sizes.querySelector("p");
+
+        if (p) {
+            p.textContent = product.sizeVariants;
+        }
+    }
+
+    /* MERITS */
+
+    const merits =
+        document.querySelector(".pros ul");
+
+    if (merits) {
+
+        merits.innerHTML = "";
+
+        product.merits.forEach(item => {
+
+            const li =
+                document.createElement("li");
+
+            li.textContent = item;
+
+            merits.appendChild(li);
+        });
+    }
+
+    /* DEMERITS */
+
+    const demerits =
+        document.querySelector(".cons ul");
+
+    if (demerits) {
+
+        demerits.innerHTML = "";
+
+        product.demerits.forEach(item => {
+
+            const li =
+                document.createElement("li");
+
+            li.textContent = item;
+
+            demerits.appendChild(li);
+        });
+    }
+
+    /* BEST FOR */
+
+    const bestFor = getSection("Best For");
+
+    if (bestFor) {
+
+        const p = bestFor.querySelector("p");
+
+        if (p) {
+            p.textContent = product.bestFor;
+        }
+    }
+
+    /* THINGS TO CONSIDER */
+
+    const consider =
+        getSection("Things to Consider");
+
+    if (consider) {
+
+        const p =
+            consider.querySelector("p");
+
+        if (p) {
+            p.textContent =
+                product.thingsToConsider;
+        }
+    }
+
+    /* SIMILAR PRODUCTS */
+
+    const similar =
+        getSection("Similar Products");
+
+    if (similar) {
+
+        const container =
+            similar.querySelector(".similar-products");
+
+        if (container) {
+
+            container.innerHTML = "";
+
+            product.similarProducts.forEach(name => {
+
+                const similarProduct =
+                    window.products.find(
+                        item =>
+                            item.name.toLowerCase() ===
+                            name.toLowerCase()
+                    );
+
+                const card =
+                    document.createElement("div");
+
+                card.className = "similar-card";
+
+                if (similarProduct) {
+
+                    card.innerHTML = `
+                        <a href="product.html?product=${similarProduct.id}">
+                            <strong>${similarProduct.name}</strong>
+                            <span>${similarProduct.brand}</span>
+                        </a>
+                    `;
+
+                } else {
+
+                    card.innerHTML = `
+                        <strong>${name}</strong>
+                        <span>Similar product</span>
+                    `;
+                }
+
+                container.appendChild(card);
+            });
+        }
+    }
+
+    /* COMPARE */
+
+    const compareText =
+        document.querySelector(".compare p");
+
+    if (compareText) {
+        compareText.textContent =
+            product.compareThisProduct;
+    }
+
+});
+</script>
+
 </body>
 </html>
