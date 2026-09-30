@@ -3298,34 +3298,536 @@ const products = [
     thingsToConsider: "Compare with training shoes before using it for everyday mileage.",
     similarProducts: ["adidas Adizero Boston 13", "Nike Pegasus Premium"],
     compareThisProduct: "Compare racing geometry, cushioning response and training versatility."
+  },
+  // 101
+  {
+    id: "adidas-nmd-r1", name: "adidas NMD_R1", brand: "adidas", category: "Footwear", image: "",
+    description: "Lifestyle sneaker mixing adidas running-inspired design with streetwear.", overview: "Lifestyle sneaker mixing adidas running-inspired design with streetwear. The NMD_R1 first launched in 2015.",
+    keyFeatures: ["BOOST midsole", "sock-like upper", "EVA midsole plugs", "lace closure"], material: "Textile/mesh upper; exact mix varies by version.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["BOOST cushioning in a casual silhouette.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Not a dedicated technical running shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Lifestyle wear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["adidas OZWEEGO", "adidas Rivalry Low"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 102
+  {
+    id: "puma-rs-x", name: "PUMA RS-X", brand: "PUMA", category: "Footwear", image: "",
+    description: "Chunky PUMA lifestyle sneaker from the RS family, with a layered retro-tech shape.", overview: "Chunky PUMA lifestyle sneaker from the RS family, with a layered retro-tech shape.",
+    keyFeatures: ["RS cushioning", "layered upper", "lightweight PU midsole", "rubber outsole"], material: "Textile/mesh with overlays; exact mix varies by version.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Layered design gives it a distinct shape.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Chunky build is less minimal than a flat sneaker.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual and streetwear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["PUMA Mostro", "PUMA Slipstream"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 103
+  {
+    id: "asics-gt-2160", name: "ASICS GT-2160", brand: "ASICS", category: "Footwear", image: "",
+    description: "Sportstyle sneaker inspired by the GT-2000 running series of the early 2010s.", overview: "Sportstyle sneaker inspired by the GT-2000 running series of the early 2010s.",
+    keyFeatures: ["GEL technology", "segmented midsole", "wavy forefoot design", "GT-2000-inspired styling", "ASICS technology or construction varies by model"], material: "Material varies by version; checked releases use leather or synthetic/textile mixes.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Genuine running heritage behind the design.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Sportstyle model, not the current GT-2000 running shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual lifestyle wear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["ASICS GT-1000 14", "ASICS GEL-LYTE V"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 104
+  {
+    id: "new-balance-990v6", name: "New Balance 990v6", brand: "New Balance", category: "Footwear", image: "",
+    description: "Newer generation of the 990 series with updated cushioning and the classic lifestyle shape.", overview: "Newer generation of the 990 series with updated cushioning and the classic lifestyle shape.",
+    keyFeatures: ["FuelCell foam", "ENCAP construction", "reflective accents", "TPU heel tab"], material: "Mesh with pigskin suede and synthetic overlays on common versions.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["FuelCell updates the 990 platform.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Pigskin suede matters for people avoiding animal-derived materials.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Everyday lifestyle wear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["New Balance 990v4", "New Balance Fresh Foam X 860v14"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 105
+  {
+    id: "skechers-max-cushioning-elite-2", name: "Skechers Max Cushioning Elite 2", brand: "Skechers", category: "Footwear", image: "",
+    description: "Everyday shoe designed mainly for walking and general movement.", overview: "Everyday shoe designed mainly for walking and general movement.",
+    keyFeatures: ["cushioned midsole", "comfortable upper", "flexible outsole", "walking-focused shape"], material: "Textile/mesh or version-specific materials; foam and rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its main purpose is easy everyday movement rather than racing.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Less specialised for high-speed or technical sport.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Walking, commuting and everyday movement.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Skechers GO RUN Ride 11", "Skechers GO WALK Arch Fit 2.0"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 106
+  {
+    id: "reebok-instapump-fury-95", name: "Reebok Instapump Fury 95", brand: "Reebok", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Reebok Question Mid", "Reebok Workout Plus"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 107
+  {
+    id: "hoka-speedgoat-6", name: "HOKA Speedgoat 6", brand: "HOKA", category: "Footwear", image: "",
+    description: "Trail-running shoe built for technical terrain and strong grip.", overview: "Trail-running shoe built for technical terrain and strong grip.",
+    keyFeatures: ["Vibram Megagrip", "5 mm lugs", "support chassis", "toe bumper"], material: "Lightweight woven textile upper.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Trail-specific outsole and protection.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Trail outsole is unnecessary for normal city use.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Trail running and hiking", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["HOKA Arahi 7", "HOKA Rincon 4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 108
+  {
+    id: "converse-run-star-hike", name: "Converse Run Star Hike", brand: "Converse", category: "Footwear", image: "",
+    description: "Platform Converse sneaker combining classic styling with a raised, jagged outsole.", overview: "Platform Converse sneaker combining classic styling with a raised, jagged outsole.",
+    keyFeatures: ["elevated platform", "saw-tooth outsole", "OrthoLite cushioning", "ankle patch"], material: "Canvas upper on classic versions.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Distinctive platform changes the classic Converse look.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Platform construction is less like a traditional flat Converse.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual and fashion wear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Converse Weapon", "Converse One Star"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 109
+  {
+    id: "vans-knu-skool", name: "Vans Knu Skool", brand: "Vans", category: "Footwear", image: "",
+    description: "Chunky low-top Vans inspired by 1990s proportions.", overview: "Chunky low-top Vans inspired by 1990s proportions.",
+    keyFeatures: ["oversized laces", "padded collar", "puffed tongue", "3D Sidestripe"], material: "Suede and canvas on common versions.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Oversized details clearly separate it from Old Skool.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Bulkier than a traditional Vans low-top.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual and streetwear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Vans Era", "Vans Sk8-Hi"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 110
+  {
+    id: "brooks-glycerin-22", name: "Brooks Glycerin 22", brand: "Brooks", category: "Footwear", image: "",
+    description: "Road-running shoe with DNA TUNED cushioning and a broad platform.", overview: "Road-running shoe with DNA TUNED cushioning and a broad platform.",
+    keyFeatures: ["DNA TUNED", "broad platform", "double-jacquard knit upper", "10 mm drop", "Brooks cushioning or support system varies by model"], material: "Engineered double-jacquard knit upper.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Tuned cushioning uses different cell sizes through the midsole.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["10 mm drop may not suit runners seeking a lower-drop shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Road running, long runs and walking", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Brooks Glycerin Max", "Brooks Cascadia 19"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 111
+  {
+    id: "on-cloudmonster-2", name: "On Cloudmonster 2", brand: "On", category: "Footwear", image: "",
+    description: "High-cushion road-running shoe with CloudTec elements, Helion foam and a Speedboard.", overview: "High-cushion road-running shoe with CloudTec elements, Helion foam and a Speedboard.",
+    keyFeatures: ["CloudTec", "Helion foam", "Speedboard", "large Cloud elements", "On cushioning geometry varies by model"], material: "Upper material varies by version.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Large Cloud elements make the design distinctive.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["High-cushion build is more substantial than a low-profile trainer.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Road running and regular training", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["On Cloudsurfer 2", "On Cloudrunner 2"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 112
+  {
+    id: "saucony-triumph-23", name: "Saucony Triumph 23", brand: "Saucony", category: "Footwear", image: "",
+    description: "Cushioned road-running shoe designed for longer everyday runs.", overview: "Cushioned road-running shoe designed for longer everyday runs.",
+    keyFeatures: ["PWRRUN PB", "SRS sockliner", "updated outsole", "road-running geometry"], material: "Upper material varies by version.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Multiple cushioning layers give it a clear comfort-focused setup.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["More substantial than a speed-focused trainer.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Long runs and daily road running", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Saucony Endorphin Pro 4", "Saucony Kinvara 16"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 113
+  {
+    id: "under-armour-curry-12", name: "Under Armour Curry 12", brand: "Under Armour", category: "Footwear", image: "",
+    description: "Basketball shoe designed around court grip, movement and stability.", overview: "Basketball shoe designed around court grip, movement and stability.",
+    keyFeatures: ["UA Flow cushioning", "multi-segment forefoot plate", "midfoot shank", "TPU heel counter"], material: "Engineered mesh with supportive overlays.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Court-specific traction and structure.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Too specialised for simple casual wear.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Basketball and indoor court use", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Under Armour Curry 13", "Under Armour HOVR Phantom 4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 114
+  {
+    id: "mizuno-wave-rebellion-pro-3", name: "Mizuno Wave Rebellion Pro 3", brand: "Mizuno", category: "Footwear", image: "",
+    description: "Performance road-racing shoe built around fast-running geometry.", overview: "Performance road-racing shoe built around fast-running geometry.",
+    keyFeatures: ["ENERZY XP", "MIZUNO WAVE plate", "SMOOTH SPEED ASSIST", "G3 outsole"], material: "Lightweight mesh/textile upper; performance foam and plate.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Strongly specialised race construction.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Specialised geometry is not aimed at casual use.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Fast road racing", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Mizuno Wave Sky 9", "Mizuno Wave Inspire 22"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 115
+  {
+    id: "salomon-speedcross-6", name: "Salomon Speedcross 6", brand: "Salomon", category: "Footwear", image: "",
+    description: "Trail-running shoe designed around grip on soft and muddy terrain.", overview: "Trail-running shoe designed around grip on soft and muddy terrain.",
+    keyFeatures: ["5 mm lugs", "Mud Contagrip", "EnergyCell+", "Quicklace", "Salomon outdoor/lifestyle geometry varies by model"], material: "Synthetic/textile upper with trail-focused mesh and rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Deep lugs give it a clear trail purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Deep trail lugs are unnecessary on smooth roads.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Mud, soft trails and off-road running", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Salomon ACS Pro", "Salomon Sense Ride 5"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 116
+  {
+    id: "adidas-ozweego", name: "adidas OZWEEGO", brand: "adidas", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["adidas NMD_R1", "adidas Rivalry Low"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 117
+  {
+    id: "puma-mostro", name: "PUMA Mostro", brand: "PUMA", category: "Footwear", image: "",
+    description: "Slim lifestyle sneaker that grew from a 1999 PUMA design inspired by very different footwear types.", overview: "Slim lifestyle sneaker that grew from a 1999 PUMA design inspired by very different footwear types.",
+    keyFeatures: ["spiked rubber outsole", "hook-and-loop closure", "low profile", "OrthoLite sockliner"], material: "Textile/mesh or other version-specific uppers.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Unusual shape and real 1990s history.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Its unusual sole and shape are not a simple everyday sneaker design.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual and fashion wear", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["PUMA RS-X", "PUMA Slipstream"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 118
+  {
+    id: "skechers-go-run-ride-11", name: "Skechers GO RUN Ride 11", brand: "Skechers", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Skechers Max Cushioning Elite 2", "Skechers GO WALK Arch Fit 2.0"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 119
+  {
+    id: "reebok-question-mid", name: "Reebok Question Mid", brand: "Reebok", category: "Footwear", image: "",
+    description: "Basketball-focused shoe built for court movement and traction.", overview: "Basketball-focused shoe built for court movement and traction.",
+    keyFeatures: ["court-focused outsole", "structured upper", "cushioned midsole", "secure heel construction"], material: "Textile/mesh or synthetic upper; foam/rubber components.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Court-specific construction has a clear purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["More specialised than an everyday lifestyle shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Basketball and court use.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Reebok Instapump Fury 95", "Reebok Workout Plus"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 120
+  {
+    id: "hoka-arahi-7", name: "HOKA Arahi 7", brand: "HOKA", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["HOKA Speedgoat 6", "HOKA Rincon 4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 121
+  {
+    id: "converse-weapon", name: "Converse Weapon", brand: "Converse", category: "Footwear", image: "",
+    description: "Basketball-focused shoe built for court movement and traction.", overview: "Basketball-focused shoe built for court movement and traction.",
+    keyFeatures: ["court-focused outsole", "structured upper", "cushioned midsole", "secure heel construction"], material: "Textile/mesh or synthetic upper; foam/rubber components.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Court-specific construction has a clear purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["More specialised than an everyday lifestyle shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Basketball and court use.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Converse Run Star Hike", "Converse One Star"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 122
+  {
+    id: "vans-era", name: "Vans Era", brand: "Vans", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Vans Knu Skool", "Vans Sk8-Hi"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 123
+  {
+    id: "brooks-glycerin-max", name: "Brooks Glycerin Max", brand: "Brooks", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure", "Brooks cushioning or support system varies by model"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Brooks Glycerin 22", "Brooks Cascadia 19"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 124
+  {
+    id: "on-cloudsurfer-2", name: "On Cloudsurfer 2", brand: "On", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure", "On cushioning geometry varies by model"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["On Cloudmonster 2", "On Cloudrunner 2"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 125
+  {
+    id: "saucony-endorphin-pro-4", name: "Saucony Endorphin Pro 4", brand: "Saucony", category: "Footwear", image: "",
+    description: "Performance road-running shoe designed for faster running or racing.", overview: "Performance road-running shoe designed for faster running or racing.",
+    keyFeatures: ["performance cushioning", "race-oriented geometry", "lightweight upper", "high-grip outsole"], material: "Lightweight textile/mesh with performance foam; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design is clearly more specialised than a daily lifestyle shoe.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Specialised geometry may not suit easy walking.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Fast road running and racing.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Saucony Triumph 23", "Saucony Kinvara 16"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 126
+  {
+    id: "under-armour-curry-13", name: "Under Armour Curry 13", brand: "Under Armour", category: "Footwear", image: "",
+    description: "Basketball-focused shoe built for court movement and traction.", overview: "Basketball-focused shoe built for court movement and traction.",
+    keyFeatures: ["court-focused outsole", "structured upper", "cushioned midsole", "secure heel construction"], material: "Textile/mesh or synthetic upper; foam/rubber components.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Court-specific construction has a clear purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["More specialised than an everyday lifestyle shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Basketball and court use.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Under Armour Curry 12", "Under Armour HOVR Phantom 4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 127
+  {
+    id: "mizuno-wave-sky-9", name: "Mizuno Wave Sky 9", brand: "Mizuno", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Mizuno Wave Rebellion Pro 3", "Mizuno Wave Inspire 22"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 128
+  {
+    id: "salomon-acs-pro", name: "Salomon ACS Pro", brand: "Salomon", category: "Footwear", image: "",
+    description: "Outdoor shoe designed for trail or mixed-terrain use.", overview: "Outdoor shoe designed for trail or mixed-terrain use.",
+    keyFeatures: ["trail-focused outsole", "lugged grip", "protective upper", "cushioned midsole", "Salomon outdoor/lifestyle geometry varies by model"], material: "Mesh/textile with synthetic protection; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Terrain-specific outsole gives it a clear outdoor purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Trail grip is unnecessary on smooth indoor floors or ordinary city streets.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Trail running, hiking or mixed outdoor routes.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Salomon Speedcross 6", "Salomon Sense Ride 5"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 129
+  {
+    id: "adidas-rivalry-low", name: "adidas Rivalry Low", brand: "adidas", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["adidas NMD_R1", "adidas OZWEEGO"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 130
+  {
+    id: "puma-slipstream", name: "PUMA Slipstream", brand: "PUMA", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["PUMA RS-X", "PUMA Mostro"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 131
+  {
+    id: "asics-gt-1000-14", name: "ASICS GT-1000 14", brand: "ASICS", category: "Footwear", image: "",
+    description: "Road-running shoe with a stability-focused design for everyday training.", overview: "Road-running shoe with a stability-focused design for everyday training.",
+    keyFeatures: ["stability-focused platform", "cushioned midsole", "secure upper", "road outsole", "ASICS technology or construction varies by model"], material: "Engineered mesh/textile upper; foam midsole; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Support structure gives it a distinct purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Neutral runners may prefer a simpler support setup.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Daily road running and walking.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["ASICS GT-2160", "ASICS GEL-LYTE V"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 132
+  {
+    id: "new-balance-990v4", name: "New Balance 990v4", brand: "New Balance", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["New Balance 990v6", "New Balance Fresh Foam X 860v14"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 133
+  {
+    id: "skechers-go-walk-arch-fit-2-0", name: "Skechers GO WALK Arch Fit 2.0", brand: "Skechers", category: "Footwear", image: "",
+    description: "Everyday shoe designed mainly for walking and general movement.", overview: "Everyday shoe designed mainly for walking and general movement.",
+    keyFeatures: ["cushioned midsole", "comfortable upper", "flexible outsole", "walking-focused shape"], material: "Textile/mesh or version-specific materials; foam and rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its main purpose is easy everyday movement rather than racing.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Less specialised for high-speed or technical sport.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Walking, commuting and everyday movement.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["Skechers Max Cushioning Elite 2", "Skechers GO RUN Ride 11"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 134
+  {
+    id: "reebok-workout-plus", name: "Reebok Workout Plus", brand: "Reebok", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["Reebok Instapump Fury 95", "Reebok Question Mid"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 135
+  {
+    id: "hoka-rincon-4", name: "HOKA Rincon 4", brand: "HOKA", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["HOKA Speedgoat 6", "HOKA Arahi 7"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 136
+  {
+    id: "converse-one-star", name: "Converse One Star", brand: "Converse", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["Converse Run Star Hike", "Converse Weapon"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 137
+  {
+    id: "vans-sk8-hi", name: "Vans Sk8-Hi", brand: "Vans", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.",
+    sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.",
+    thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.",
+    similarProducts: ["Vans Knu Skool", "Vans Era"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 138
+  {
+    id: "brooks-cascadia-19", name: "Brooks Cascadia 19", brand: "Brooks", category: "Footwear", image: "",
+    description: "Outdoor shoe designed for trail or mixed-terrain use.", overview: "Outdoor shoe designed for trail or mixed-terrain use.",
+    keyFeatures: ["trail-focused outsole", "lugged grip", "protective upper", "cushioned midsole", "Brooks cushioning or support system varies by model"], material: "Mesh/textile with synthetic protection; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Terrain-specific outsole gives it a clear outdoor purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Trail grip is unnecessary on smooth indoor floors or ordinary city streets.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Trail running, hiking or mixed outdoor routes.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Brooks Glycerin 22", "Brooks Glycerin Max"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 139
+  {
+    id: "on-cloudrunner-2", name: "On Cloudrunner 2", brand: "On", category: "Footwear", image: "",
+    description: "Everyday shoe designed mainly for walking and general movement.", overview: "Everyday shoe designed mainly for walking and general movement.",
+    keyFeatures: ["cushioned midsole", "comfortable upper", "flexible outsole", "walking-focused shape", "On cushioning geometry varies by model"], material: "Textile/mesh or version-specific materials; foam and rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its main purpose is easy everyday movement rather than racing.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Less specialised for high-speed or technical sport.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Walking, commuting and everyday movement.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["On Cloudmonster 2", "On Cloudsurfer 2"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 140
+  {
+    id: "saucony-kinvara-16", name: "Saucony Kinvara 16", brand: "Saucony", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Saucony Triumph 23", "Saucony Endorphin Pro 4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 141
+  {
+    id: "under-armour-hovr-phantom-4", name: "Under Armour HOVR Phantom 4", brand: "Under Armour", category: "Footwear", image: "",
+    description: "Training shoe designed for gym work and mixed workouts.", overview: "Training shoe designed for gym work and mixed workouts.",
+    keyFeatures: ["stable platform", "training-focused outsole", "flexible forefoot", "supportive upper"], material: "Textile/mesh or synthetic upper; foam/rubber sole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Training setup is more useful for mixed movement than a pure road shoe.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Not designed as a long-distance road-running shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Gym training and general workouts.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Under Armour Curry 12", "Under Armour Curry 13"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 142
+  {
+    id: "mizuno-wave-inspire-22", name: "Mizuno Wave Inspire 22", brand: "Mizuno", category: "Footwear", image: "",
+    description: "Road-running shoe with a stability-focused design for everyday training.", overview: "Road-running shoe with a stability-focused design for everyday training.",
+    keyFeatures: ["stability-focused platform", "cushioned midsole", "secure upper", "road outsole"], material: "Engineered mesh/textile upper; foam midsole; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Support structure gives it a distinct purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Neutral runners may prefer a simpler support setup.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Daily road running and walking.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Mizuno Wave Rebellion Pro 3", "Mizuno Wave Sky 9"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 143
+  {
+    id: "salomon-sense-ride-5", name: "Salomon Sense Ride 5", brand: "Salomon", category: "Footwear", image: "",
+    description: "Outdoor shoe designed for trail or mixed-terrain use.", overview: "Outdoor shoe designed for trail or mixed-terrain use.",
+    keyFeatures: ["trail-focused outsole", "lugged grip", "protective upper", "cushioned midsole", "Salomon outdoor/lifestyle geometry varies by model"], material: "Mesh/textile with synthetic protection; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Terrain-specific outsole gives it a clear outdoor purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Trail grip is unnecessary on smooth indoor floors or ordinary city streets.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Trail running, hiking or mixed outdoor routes.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Salomon Speedcross 6", "Salomon ACS Pro"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 144
+  {
+    id: "adidas-response-cl", name: "adidas Response CL", brand: "adidas", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["adidas NMD_R1", "adidas OZWEEGO"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 145
+  {
+    id: "puma-mb-04", name: "PUMA MB.04", brand: "PUMA", category: "Footwear", image: "",
+    description: "Basketball-focused shoe built for court movement and traction.", overview: "Basketball-focused shoe built for court movement and traction.",
+    keyFeatures: ["court-focused outsole", "structured upper", "cushioned midsole", "secure heel construction"], material: "Textile/mesh or synthetic upper; foam/rubber components.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Court-specific construction has a clear purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["More specialised than an everyday lifestyle shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Basketball and court use.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["PUMA RS-X", "PUMA Mostro"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 146
+  {
+    id: "asics-gel-lyte-v", name: "ASICS GEL-LYTE V", brand: "ASICS", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure", "ASICS technology or construction varies by model"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["ASICS GT-2160", "ASICS GT-1000 14"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 147
+  {
+    id: "new-balance-fresh-foam-x-860v14", name: "New Balance Fresh Foam X 860v14", brand: "New Balance", category: "Footwear", image: "",
+    description: "Road-running shoe with a stability-focused design for everyday training.", overview: "Road-running shoe with a stability-focused design for everyday training.",
+    keyFeatures: ["stability-focused platform", "cushioned midsole", "secure upper", "road outsole"], material: "Engineered mesh/textile upper; foam midsole; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Support structure gives it a distinct purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Neutral runners may prefer a simpler support setup.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Daily road running and walking.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["New Balance 990v6", "New Balance 990v4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 148
+  {
+    id: "skechers-ultra-flex-3-0", name: "Skechers Ultra Flex 3.0", brand: "Skechers", category: "Footwear", image: "",
+    description: "Training shoe designed for gym work and mixed workouts.", overview: "Training shoe designed for gym work and mixed workouts.",
+    keyFeatures: ["stable platform", "training-focused outsole", "flexible forefoot", "supportive upper"], material: "Textile/mesh or synthetic upper; foam/rubber sole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Training setup is more useful for mixed movement than a pure road shoe.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Not designed as a long-distance road-running shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Gym training and general workouts.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Skechers Max Cushioning Elite 2", "Skechers GO RUN Ride 11"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 149
+  {
+    id: "reebok-zig-kinetica-3", name: "Reebok Zig Kinetica 3", brand: "Reebok", category: "Footwear", image: "",
+    description: "Training shoe designed for gym work and mixed workouts.", overview: "Training shoe designed for gym work and mixed workouts.",
+    keyFeatures: ["stable platform", "training-focused outsole", "flexible forefoot", "supportive upper"], material: "Textile/mesh or synthetic upper; foam/rubber sole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Training setup is more useful for mixed movement than a pure road shoe.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Not designed as a long-distance road-running shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Gym training and general workouts.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Reebok Instapump Fury 95", "Reebok Question Mid"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 150
+  {
+    id: "hoka-gaviota-5", name: "HOKA Gaviota 5", brand: "HOKA", category: "Footwear", image: "",
+    description: "Road-running shoe with a stability-focused design for everyday training.", overview: "Road-running shoe with a stability-focused design for everyday training.",
+    keyFeatures: ["stability-focused platform", "cushioned midsole", "secure upper", "road outsole"], material: "Engineered mesh/textile upper; foam midsole; rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Support structure gives it a distinct purpose.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Neutral runners may prefer a simpler support setup.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Daily road running and walking.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["HOKA Speedgoat 6", "HOKA Arahi 7"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 151
+  {
+    id: "converse-pro-leather", name: "Converse Pro Leather", brand: "Converse", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Converse Run Star Hike", "Converse Weapon"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 152
+  {
+    id: "vans-half-cab", name: "Vans Half Cab", brand: "Vans", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Vans Knu Skool", "Vans Era"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 153
+  {
+    id: "brooks-launch-11", name: "Brooks Launch 11", brand: "Brooks", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure", "Brooks cushioning or support system varies by model"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Brooks Glycerin 22", "Brooks Glycerin Max"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 154
+  {
+    id: "on-cloud-6", name: "On Cloud 6", brand: "On", category: "Footwear", image: "",
+    description: "Everyday shoe designed mainly for walking and general movement.", overview: "Everyday shoe designed mainly for walking and general movement.",
+    keyFeatures: ["cushioned midsole", "comfortable upper", "flexible outsole", "walking-focused shape", "On cushioning geometry varies by model"], material: "Textile/mesh or version-specific materials; foam and rubber outsole.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its main purpose is easy everyday movement rather than racing.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Less specialised for high-speed or technical sport.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Walking, commuting and everyday movement.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["On Cloudmonster 2", "On Cloudsurfer 2"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 155
+  {
+    id: "saucony-ride-18", name: "Saucony Ride 18", brand: "Saucony", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Saucony Triumph 23", "Saucony Endorphin Pro 4"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
+  },
+  // 156
+  {
+    id: "mizuno-wave-horizon-8", name: "Mizuno Wave Horizon 8", brand: "Mizuno", category: "Footwear", image: "",
+    description: "Lifestyle sneaker with a casual, model-specific design.", overview: "Lifestyle sneaker with a casual, model-specific design.",
+    keyFeatures: ["lifestyle construction", "layered or low-top profile", "everyday outsole", "lace-up or slip-on closure"], material: "Material varies by version; textile, suede, leather or synthetic combinations are used across releases.", sizeVariants: "Available sizing and width options vary by exact version and market. Check the specific release for exact sizes.",
+    merits: ["Its design gives it a clear lifestyle identity.", "Model-specific design gives it a clear place in the footwear range."], demerits: ["Lifestyle construction is not the same as a dedicated performance shoe.", "Materials, fit and small construction details can vary by version."],
+    bestFor: "Casual everyday wear.", thingsToConsider: "Check the exact version, intended surface/use, available width and fit before choosing.", similarProducts: ["Mizuno Wave Rebellion Pro 3", "Mizuno Wave Sky 9"],
+    compareThisProduct: "Compare intended use, cushioning, construction, fit and outsole design."
   }
 ];
 
-/* =========================================================
-   DATABASE SAFETY CHECKS
-   ========================================================= */
 
-const normalizedNames = products.map(product =>
-  product.name.trim().toLowerCase()
-);
-
-const uniqueNames = new Set(normalizedNames);
-
-if (products.length !== 100) {
-  throw new Error(
-    `you knoowww requires exactly 100 products. Found ${products.length}.`
-  );
-}
-
-if (uniqueNames.size !== 100) {
-  const duplicates = normalizedNames.filter(
-    (name, index) => normalizedNames.indexOf(name) !== index
-  );
-
-  throw new Error(
-    `Duplicate product found: ${[...new Set(duplicates)].join(", ")}`
-  );
-}
-
-/* Make the database available to the other HTML pages */
-window.products = products;
