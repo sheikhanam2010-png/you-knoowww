@@ -6827,4 +6827,4 @@ if (uniqueNames.size !== 266) {
 }
 
 /* Make the database available to the other HTML pages */
-window.products = products;
+window.youKnoowwwProducts = products;
