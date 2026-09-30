@@ -6828,3 +6828,4 @@ if (uniqueNames.size !== 266) {
 
 /* Make the database available to the other HTML pages */
 window.youKnoowwwProducts = products;
+window.products = products;
