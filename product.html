@@ -785,9 +785,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* HERO */
 
-    const image =
-        document.querySelector(".product-image img");
-
+   const imageBox =
+    document.querySelector(".product-image");
     const category =
         document.querySelector(".category-label");
 
@@ -816,10 +815,22 @@ document.addEventListener("DOMContentLoaded", function () {
         description.textContent = product.description;
     }
 
-    if (image && product.image) {
-        image.src = product.image;
-        image.alt = product.name;
+  if (imageBox) {
+    if (product.image && product.image.trim() !== "") {
+        imageBox.innerHTML = `
+            <img
+                src="${product.image}"
+                alt="${product.name}"
+            >
+        `;
+    } else {
+        imageBox.innerHTML = `
+            <div class="image-placeholder">
+                Images coming soon
+            </div>
+        `;
     }
+}
 
     /* FIND SECTION */
 
