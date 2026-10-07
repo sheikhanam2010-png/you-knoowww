@@ -1,780 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>you knoowww — Discover · Compare · Choose</title>
-
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #070b1d;
-    color: #ffffff;
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ---------- NAVBAR ---------- */
-
-nav {
-    height: 76px;
-    padding: 0 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    background: rgba(7,11,29,0.92);
-    position: relative;
-    z-index: 10;
-}
-
-.logo {
-    font-size: 27px;
-    font-weight: 800;
-    letter-spacing: -1.5px;
-}
-
-.logo .white {
-    color: white;
-}
-
-.logo .blue {
-    color: #6ed8ff;
-}
-
-.logo .purple {
-    color: #c77dff;
-}
-
-.nav-links {
-    display: flex;
-    gap: 35px;
-    align-items: center;
-    font-size: 14px;
-}
-
-.nav-links a {
-    color: #dce3ff;
-    transition: 0.25s;
-}
-
-.nav-links a:hover {
-    color: #c77dff;
-}
-
-.nav-button {
-    padding: 11px 19px;
-    border-radius: 30px;
-    background: linear-gradient(90deg,#635bff,#d36bff);
-    color: white !important;
-    font-weight: bold;
-}
-
-/* ---------- HERO ---------- */
-
-.hero {
-    min-height: 650px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 20px 100px;
-    overflow: hidden;
-}
-
-.glow-one,
-.glow-two,
-.glow-three {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(90px);
-    opacity: 0.35;
-    pointer-events: none;
-}
-
-.glow-one {
-    width: 360px;
-    height: 360px;
-    background: #5548ff;
-    top: 50px;
-    left: -100px;
-}
-
-.glow-two {
-    width: 350px;
-    height: 350px;
-    background: #e85cff;
-    right: -100px;
-    top: 150px;
-}
-
-.glow-three {
-    width: 240px;
-    height: 240px;
-    background: #00cfff;
-    left: 42%;
-    bottom: -100px;
-}
-
-.hero-content {
-    max-width: 900px;
-    position: relative;
-    z-index: 2;
-}
-
-.badge {
-    display: inline-block;
-    padding: 9px 18px;
-    border: 1px solid rgba(160,130,255,0.5);
-    border-radius: 30px;
-    background: rgba(116,91,255,0.10);
-    color: #d8d1ff;
-    font-size: 13px;
-    margin-bottom: 28px;
-}
-
-.hero h1 {
-    font-size: clamp(52px, 8vw, 94px);
-    line-height: 0.98;
-    letter-spacing: -5px;
-    font-weight: 900;
-}
-
-.hero h1 .gradient {
-    background: linear-gradient(90deg,#7edcff,#8c6cff,#e77dff,#ff9acb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-    max-width: 680px;
-    margin: 28px auto 38px;
-    color: #aeb8d7;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-/* ---------- SEARCH ---------- */
-
-.search-box {
-    max-width: 690px;
-    margin: auto;
-    display: flex;
-    padding: 7px;
-    background: rgba(255,255,255,0.97);
-    border-radius: 18px;
-    box-shadow: 0 15px 60px rgba(93,75,255,0.25);
-}
-
-.search-box input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 18px;
-    font-size: 15px;
-    color: #18203d;
-    background: transparent;
-}
-
-.search-box button {
-    border: none;
-    border-radius: 14px;
-    padding: 0 28px;
-    background: linear-gradient(90deg,#5b5cff,#c75cff);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* ---------- TRUST STRIP ---------- */
-
-.trust {
-    display: flex;
-    justify-content: center;
-    gap: 55px;
-    flex-wrap: wrap;
-    margin-top: 42px;
-    color: #aeb8d7;
-    font-size: 13px;
-}
-
-.trust span {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.trust b {
-    color: #8eeaff;
-}
-
-/* ---------- CATEGORIES ---------- */
-
-.categories-section {
-    background: #f7f8ff;
-    color: #10162c;
-    padding: 90px 6%;
-}
-
-.section-top {
-    text-align: center;
-    margin-bottom: 48px;
-}
-
-.small-title {
-    color: #765cff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 11px;
-    font-weight: bold;
-    margin-bottom: 13px;
-}
-
-.section-top h2 {
-    font-size: 43px;
-    letter-spacing: -2px;
-}
-
-.section-top h2 span {
-    color: #765cff;
-}
-
-.section-top p {
-    color: #68708c;
-    margin-top: 12px;
-}
-
-.category-grid {
-    max-width: 1180px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 17px;
-}
-
-.category {
-    min-height: 150px;
-    border-radius: 22px;
-    padding: 25px 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid rgba(0,0,0,0.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.category:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px rgba(56,52,100,0.12);
-}
-
-.category-icon {
-    font-size: 35px;
-}
-
-.category h3 {
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-.category p {
-    font-size: 11px;
-    color: #717891;
-    margin-top: 5px;
-}
-
-.c1 { background: #e2f2ff; }
-.c2 { background: #ffe8f5; }
-.c3 { background: #e4f9ef; }
-.c4 { background: #f3eaff; }
-.c5 { background: #def8fa; }
-.c6 { background: #eee9ff; }
-.c7 { background: #fff2dc; }
-.c8 { background: #e9f0ff; }
-.c9 { background: #ffe9ed; }
-.c10 { background: #eee9ff; }
-
-/* ---------- WHY SECTION ---------- */
-
-.why {
-    padding: 100px 7%;
-    background: #070b1d;
-    position: relative;
-    overflow: hidden;
-}
-
-.why-content {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.why h2 {
-    font-size: 48px;
-    letter-spacing: -2px;
-    margin-bottom: 20px;
-}
-
-.why h2 span {
-    color: #c77dff;
-}
-
-.why-intro {
-    color: #9da8c9;
-    line-height: 1.7;
-    max-width: 500px;
-}
-
-.features {
-    display: grid;
-    gap: 17px;
-}
-
-.feature {
-    padding: 22px;
-    border-radius: 18px;
-    background: rgba(255,255,255,0.045);
-    border: 1px solid rgba(255,255,255,0.07);
-}
-
-.feature-icon {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.feature h3 {
-    font-size: 16px;
-    margin-bottom: 6px;
-}
-
-.feature p {
-    color: #8f99b8;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-/* ---------- COMPARE CTA ---------- */
-
-.compare {
-    padding: 90px 20px;
-    text-align: center;
-    background: linear-gradient(135deg,#101633,#24134a);
-}
-
-.compare h2 {
-    font-size: 46px;
-    letter-spacing: -2px;
-}
-
-.compare h2 span {
-    background: linear-gradient(90deg,#75e5ff,#dc7dff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.compare p {
-    color: #aeb8d7;
-    max-width: 620px;
-    margin: 17px auto 30px;
-    line-height: 1.7;
-}
-
-.compare-button {
-    display: inline-block;
-    padding: 15px 28px;
-    border-radius: 30px;
-    background: linear-gradient(90deg,#635bff,#dc69ff);
-    font-weight: bold;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer {
-    padding: 45px 7%;
-    background: #050816;
-    border-top: 1px solid rgba(255,255,255,0.07);
-}
-
-.footer-main {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.footer-logo {
-    font-size: 23px;
-    font-weight: 800;
-}
-
-.footer-text {
-    color: #77819f;
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 25px;
-    color: #9ba5c2;
-    font-size: 13px;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.06);
-    margin-top: 35px;
-    padding-top: 20px;
-    color: #606a86;
-    font-size: 11px;
-}
-
-/* ---------- RESPONSIVE ---------- */
-
-@media (max-width: 900px) {
-    .category-grid {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>You Knoowww — Footwear Collection</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f6f6;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 28px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .count {
+      font-size: 14px;
+      opacity: .75;
+    }
+
+    .controls {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    input,
+    select {
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      padding: 13px 15px;
+      font-size: 14px;
+      background: white;
+    }
+
+    #search {
+      flex: 1;
+      min-width: 230px;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1450px;
+      margin: 35px auto;
+    }
+
+    .status {
+      margin-bottom: 22px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,.07);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .image-box {
+      width: 100%;
+      height: 280px;
+      background: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 15px;
+    }
+
+    .no-image {
+      text-align: center;
+      color: #777;
+      padding: 25px;
+      font-size: 13px;
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .number {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 7px;
+    }
+
+    .brand {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #777;
+      margin-bottom: 7px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.5;
+      min-height: 40px;
+    }
+
+    .view-btn {
+      width: 100%;
+      margin-top: 16px;
+      padding: 12px;
+      border: none;
+      border-radius: 9px;
+      background: #111;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .view-btn:hover {
+      background: #333;
+    }
+
+    .empty {
+      text-align: center;
+      padding: 80px 20px;
+      color: #777;
+      display: none;
+    }
+
+    /* MODAL */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-box {
+      background: white;
+      width: 95%;
+      max-width: 850px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 20px;
+      padding: 25px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      border: none;
+      background: #eee;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .modal-image {
+      width: 100%;
+      height: 400px;
+      background: #f4f4f4;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+
+    .modal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 20px;
+    }
+
+    .modal h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .modal-brand {
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .detail {
+      background: #f6f6f6;
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    .detail strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .detail span {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1100px) {
+      .products-grid {
         grid-template-columns: repeat(3, 1fr);
+      }
     }
 
-    .why-content {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-links {
-        gap: 15px;
-    }
-}
-
-@media (max-width: 600px) {
-    nav {
-        padding: 0 5%;
-    }
-
-    .nav-links a:not(.nav-button) {
-        display: none;
-    }
-
-    .hero {
-        padding-top: 65px;
-    }
-
-    .hero h1 {
-        font-size: 55px;
-        letter-spacing: -3px;
-    }
-
-    .search-box {
-        flex-direction: column;
-        background: white;
-        padding: 7px;
-    }
-
-    .search-box button {
-        height: 50px;
-    }
-
-    .category-grid {
+    @media (max-width: 750px) {
+      .products-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .image-box {
+        height: 230px;
+      }
     }
 
-    .section-top h2,
-    .why h2,
-    .compare h2 {
-        font-size: 36px;
-    }
+    @media (max-width: 500px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
 
-    .trust {
-        gap: 20px;
+      .details {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-image {
+        height: 280px;
+      }
     }
-}
-</style>
+  </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-    <div class="logo">
-        <span class="white">you</span>
-        <span class="blue"> kn</span><span class="purple">oowww</span>
+<header>
+  <div class="header-top">
+    <div>
+      <div class="logo">YOU KNOOWWW</div>
+      <div class="count">Premium Footwear Collection</div>
     </div>
 
-    <div class="nav-links">
-        <a href="#">Home</a>
-       <a href="categories.html">Categories</a>
-        <a href="#why">Why us?</a>
-        <a href="#about" class="nav-button">About</a>
+    <div class="count" id="totalCount">
+      0 Products
     </div>
-</nav>
+  </div>
+
+  <div class="controls">
+    <input
+      id="search"
+      type="search"
+      placeholder="Search shoes, brands or models..."
+    >
+
+    <select id="brandFilter">
+      <option value="all">All Brands</option>
+    </select>
+
+    <select id="sort">
+      <option value="sequence">Original Sequence</option>
+      <option value="az">A–Z</option>
+      <option value="za">Z–A</option>
+    </select>
+  </div>
+</header>
 
 
-<!-- HERO -->
-<section class="hero">
+<main>
 
-    <div class="glow-one"></div>
-    <div class="glow-two"></div>
-    <div class="glow-three"></div>
+  <div class="status" id="status">
+    Loading footwear collection...
+  </div>
 
-    <div class="hero-content">
+  <div class="products-grid" id="productsGrid"></div>
 
-        <div class="badge">✦ Know the product. Know your choice.</div>
+  <div class="empty" id="empty">
+    No products found.
+  </div>
 
-        <h1>
-            Discover.<br>
-            <span class="gradient">Compare.</span><br>
-            Choose.
-        </h1>
-
-        <p>
-            Explore products, understand what you're buying,
-            compare your options and make smarter choices —
-            all in one place.
-        </p>
-
-        <div class="search-box">
-            <input
-                type="text"
-                placeholder="Search for a product, brand or category..."
-            >
-            <button>Search →</button>
-        </div>
-
-        <div class="trust">
-            <span>✦ <b>Product Knowledge</b></span>
-            <span>◇ <b>Clear Comparisons</b></span>
-            <span>✧ <b>Global Categories</b></span>
-            <span>◎ <b>Smarter Choices</b></span>
-        </div>
-
-    </div>
-</section>
+</main>
 
 
-<!-- CATEGORIES -->
-<section class="categories-section" id="categories">
+<div class="modal" id="modal">
 
-    <div class="section-top">
-        <div class="small-title">Explore</div>
-        <h2>Find your world of <span>products.</span></h2>
-        <p>From everyday essentials to things you've always wanted to understand.</p>
-    </div>
+  <div class="modal-box">
 
-    <div class="category-grid">
+    <button class="close" onclick="closeModal()">×</button>
 
-        <div class="category c1">
-            <div class="category-icon">💻</div>
-            <div>
-                <h3>Electronics</h3>
-                <p>Devices & technology</p>
-            </div>
-        </div>
+    <div class="modal-image" id="modalImage"></div>
 
-        <div class="category c2">
-            <div class="category-icon">👗</div>
-            <div>
-                <h3>Fashion</h3>
-                <p>Clothing & style</p>
-            </div>
-        </div>
+    <h2 id="modalName"></h2>
 
-        <div class="category c3">
-            <div class="category-icon">🏠</div>
-            <div>
-                <h3>Home & Living</h3>
-                <p>Make your space yours</p>
-            </div>
-        </div>
+    <div class="modal-brand" id="modalBrand"></div>
 
-        <div class="category c4">
-            <div class="category-icon">💄</div>
-            <div>
-                <h3>Beauty</h3>
-                <p>Beauty products & care</p>
-            </div>
-        </div>
+    <p id="modalDescription"></p>
 
-        <div class="category c5">
-            <div class="category-icon">🩺</div>
-            <div>
-                <h3>Health & Wellness</h3>
-                <p>Everyday wellness</p>
-            </div>
-        </div>
+    <div class="details">
 
-        <div class="category c6">
-            <div class="category-icon">🏸</div>
-            <div>
-                <h3>Sports & Outdoors</h3>
-                <p>Move & explore</p>
-            </div>
-        </div>
+      <div class="detail">
+        <strong>Best For</strong>
+        <span id="modalBestFor"></span>
+      </div>
 
-        <div class="category c7">
-            <div class="category-icon">🍜</div>
-            <div>
-                <h3>Food & Beverages</h3>
-                <p>Discover what you consume</p>
-            </div>
-        </div>
+      <div class="detail">
+        <strong>Material</strong>
+        <span id="modalMaterial"></span>
+      </div>
 
-        <div class="category c8">
-            <div class="category-icon">📚</div>
-            <div>
-                <h3>Books</h3>
-                <p>Read & discover</p>
-            </div>
-        </div>
+      <div class="detail">
+        <strong>Key Features</strong>
+        <span id="modalFeatures"></span>
+      </div>
 
-        <div class="category c9">
-            <div class="category-icon">🧴</div>
-            <div>
-                <h3>Personal Care</h3>
-                <p>Everyday essentials</p>
-            </div>
-        </div>
-
-        <div class="category c10">
-            <div class="category-icon">👜</div>
-            <div>
-                <h3>Bags & Accessories</h3>
-                <p>Details that matter</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- WHY YOU KNOOWWW -->
-<section class="why" id="why">
-
-    <div class="why-content">
-
-        <div>
-            <div class="small-title">The idea</div>
-
-            <h2>
-                Don't just buy.<br>
-                <span>Know first.</span>
-            </h2>
-
-            <p class="why-intro">
-                Shopping shouldn't begin with a purchase.
-                It should begin with understanding.
-                you knoowww helps you discover products,
-                learn what makes them different and compare
-                your options without the noise.
-            </p>
-        </div>
-
-        <div class="features">
-
-            <div class="feature">
-                <div class="feature-icon">🔎</div>
-                <h3>Understand the product</h3>
-                <p>
-                    Learn what a product is, what it does,
-                    what it's made of and what to consider.
-                </p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">⚖️</div>
-                <h3>Compare clearly</h3>
-                <p>
-                    See meaningful differences between
-                    products instead of confusing information.
-                </p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">🌍</div>
-                <h3>Built for everyone</h3>
-                <p>
-                    Explore products and categories from
-                    different lifestyles and markets around the world.
-                </p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">✨</div>
-                <h3>Make your own choice</h3>
-                <p>
-                    We give you knowledge — the final decision
-                    stays yours.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-<!-- COMPARE CTA -->
-<section class="compare">
-
-    <h2>
-        Curious about two products?
-        <span>Compare them.</span>
-    </h2>
-
-    <p>
-        Put products side by side, understand the differences
-        and discover which one fits your needs better.
-    </p>
-
-    <a href="#categories" class="compare-button">
-        Start Exploring →
-    </a>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer id="about">
-
-    <div class="footer-main">
-
-        <div>
-            <div class="footer-logo">
-                you knoowww
-            </div>
-
-            <div class="footer-text">
-                Discover · Compare · Choose
-            </div>
-        </div>
-
-        <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#categories">Categories</a>
-            <a href="#why">Why us?</a>
-            <a href="#about">About</a>
-        </div>
+      <div class="detail">
+        <strong>Things To Consider</strong>
+        <span id="modalConsider"></span>
+      </div>
 
     </div>
 
-    <div class="footer-bottom">
-        © 2026 you knoowww · Know More. Choose Better.
-    </div>
+  </div>
 
-</footer>
+</div>
+
+
+<!-- YOUR ORIGINAL 100 PRODUCTS -->
+<script src="products(1).js"></script>
+
+<script>
+  /*
+    The original file declares:
+    const products = [...]
+    
+    We expose it to the additions file.
+  */
+  window.products = products;
+</script>
+
+
+<!-- YOUR 166 NEW PRODUCTS -->
+<script src="footwear166_additions.js"></script>
+
+
+<script>
+
+  let allProducts = window.products || [];
+  let displayedProducts = [...allProducts];
+
+  /*
+    SAFETY CHECK
+    The website must contain exactly 266 products.
+  */
+
+  if (allProducts.length !== 266) {
+    console.error(
+      "Expected 266 products but found:",
+      allProducts.length
+    );
+  }
+
+  /*
+    Give every product its website sequence number.
+  */
+
+  allProducts = allProducts.map((product, index) => ({
+    ...product,
+    sequence: index + 1
+  }));
+
+  displayedProducts = [...allProducts];
+
+  const grid = document.getElementById("productsGrid");
+  const search = document.getElementById("search");
+  const brandFilter = document.getElementById("brandFilter");
+  const sort = document.getElementById("sort");
+  const status = document.getElementById("status");
+  const empty = document.getElementById("empty");
+  const totalCount = document.getElementById("totalCount");
+
+
+  /*
+    BRAND FILTER
+  */
+
+  const brands = [
+    ...new Set(
+      allProducts
+        .map(product => product.brand)
+        .filter(Boolean)
+    )
+  ].sort();
+
+  brands.forEach(brand => {
+
+    const option = document.createElement("option");
+
+    option.value = brand;
+    option.textContent = brand;
+
+    brandFilter.appendChild(option);
+
+  });
+
+
+  /*
+    IMAGE SAFETY
+    Never replace a missing shoe with a random shoe.
+  */
+
+  function createImage(product) {
+
+    const box = document.createElement("div");
+    box.className = "image-box";
+
+    if (
+      product.image &&
+      typeof product.image === "string" &&
+      product.image.trim() !== ""
+    ) {
+
+      const img = document.createElement("img");
+
+      img.src = product.image.trim();
+
+      img.alt = `${product.name} — official product image`;
+
+      img.loading = "lazy";
+
+      img.referrerPolicy = "no-referrer";
+
+      img.onerror = function() {
+
+        box.innerHTML = `
+          <div class="no-image">
+            Exact product image unavailable.
+          </div>
+        `;
+
+      };
+
+      box.appendChild(img);
+
+    } else {
+
+      box.innerHTML = `
+        <div class="no-image">
+          Exact product image not added yet.
+        </div>
+      `;
+
+    }
+
+    return box;
+  }
+
+
+  /*
+    RENDER PRODUCTS
+  */
+
+  function renderProducts(productsToShow) {
+
+    grid.innerHTML = "";
+
+    totalCount.textContent =
+      `${productsToShow.length} Products`;
+
+    status.textContent =
+      `Showing ${productsToShow.length} of ${allProducts.length} products`;
+
+    if (productsToShow.length === 0) {
+
+      empty.style.display = "block";
+
+      return;
+
+    }
+
+    empty.style.display = "none";
+
+
+    productsToShow.forEach(product => {
+
+      const card = document.createElement("article");
+
+      card.className = "product-card";
+
+
+      card.appendChild(
+        createImage(product)
+      );
+
+
+      const info = document.createElement("div");
+
+      info.className = "product-info";
+
+
+      const number = document.createElement("div");
+
+      number.className = "number";
+
+      number.textContent =
+        `#${String(product.sequence).padStart(3, "0")}`;
+
+
+      const brand = document.createElement("div");
+
+      brand.className = "brand";
+
+      brand.textContent =
+        product.brand || "Brand";
+
+
+      const name = document.createElement("div");
+
+      name.className = "product-name";
+
+      name.textContent =
+        product.name || "Unnamed Product";
+
+
+      const description = document.createElement("div");
+
+      description.className = "description";
+
+      description.textContent =
+        product.description || "";
+
+
+      const button = document.createElement("button");
+
+      button.className = "view-btn";
+
+      button.textContent = "View Product";
+
+      button.onclick = () =>
+        openModal(product);
+
+
+      info.appendChild(number);
+      info.appendChild(brand);
+      info.appendChild(name);
+      info.appendChild(description);
+      info.appendChild(button);
+
+      card.appendChild(info);
+
+      grid.appendChild(card);
+
+    });
+
+  }
+
+
+  /*
+    SEARCH + FILTER
+  */
+
+  function applyFilters() {
+
+    const searchText =
+      search.value.trim().toLowerCase();
+
+    const selectedBrand =
+      brandFilter.value;
+
+    displayedProducts =
+      allProducts.filter(product => {
+
+        const matchesSearch =
+          !searchText ||
+          product.name.toLowerCase().includes(searchText) ||
+          product.brand.toLowerCase().includes(searchText) ||
+          (product.description || "")
+            .toLowerCase()
+            .includes(searchText);
+
+        const matchesBrand =
+          selectedBrand === "all" ||
+          product.brand === selectedBrand;
+
+        return matchesSearch && matchesBrand;
+
+      });
+
+
+    if (sort.value === "az") {
+
+      displayedProducts.sort((a, b) =>
+        a.name.localeCompare(b.name)
+      );
+
+    }
+
+    else if (sort.value === "za") {
+
+      displayedProducts.sort((a, b) =>
+        b.name.localeCompare(a.name)
+      );
+
+    }
+
+    else {
+
+      displayedProducts.sort(
+        (a, b) => a.sequence - b.sequence
+      );
+
+    }
+
+
+    renderProducts(displayedProducts);
+
+  }
+
+
+  search.addEventListener(
+    "input",
+    applyFilters
+  );
+
+  brandFilter.addEventListener(
+    "change",
+    applyFilters
+  );
+
+  sort.addEventListener(
+    "change",
+    applyFilters
+  );
+
+
+  /*
+    PRODUCT MODAL
+  */
+
+  function openModal(product) {
+
+    const modal =
+      document.getElementById("modal");
+
+    const modalImage =
+      document.getElementById("modalImage");
+
+
+    modalImage.innerHTML = "";
+
+
+    if (
+      product.image &&
+      product.image.trim() !== ""
+    ) {
+
+      const img =
+        document.createElement("img");
+
+      img.src = product.image;
+
+      img.alt =
+        `${product.name} exact product image`;
+
+      img.referrerPolicy =
+        "no-referrer";
+
+      img.onerror = function() {
+
+        modalImage.innerHTML = `
+          <div class="no-image">
+            Exact product image unavailable.
+          </div>
+        `;
+
+      };
+
+      modalImage.appendChild(img);
+
+    } else {
+
+      modalImage.innerHTML = `
+        <div class="no-image">
+          Exact product image not added yet.
+        </div>
+      `;
+
+    }
+
+
+    document.getElementById("modalName")
+      .textContent =
+      `#${String(product.sequence).padStart(3, "0")} — ${product.name}`;
+
+
+    document.getElementById("modalBrand")
+      .textContent =
+      product.brand || "";
+
+
+    document.getElementById("modalDescription")
+      .textContent =
+      product.overview ||
+      product.description ||
+      "";
+
+
+    document.getElementById("modalBestFor")
+      .textContent =
+      product.bestFor || "—";
+
+
+    document.getElementById("modalMaterial")
+      .textContent =
+      product.material || "—";
+
+
+    document.getElementById("modalFeatures")
+      .textContent =
+      Array.isArray(product.keyFeatures)
+        ? product.keyFeatures.join(" • ")
+        : "—";
+
+
+    document.getElementById("modalConsider")
+      .textContent =
+      product.thingsToConsider || "—";
+
+
+    modal.classList.add("active");
+
+  }
+
+
+  function closeModal() {
+
+    document
+      .getElementById("modal")
+      .classList.remove("active");
+
+  }
+
+
+  document
+    .getElementById("modal")
+    .addEventListener("click", function(event) {
+
+      if (event.target === this) {
+        closeModal();
+      }
+
+    });
+
+
+  document.addEventListener(
+    "keydown",
+    function(event) {
+
+      if (event.key === "Escape") {
+        closeModal();
+      }
+
+    }
+  );
+
+
+  /*
+    FINAL DATABASE CHECK
+  */
+
+  const names =
+    allProducts.map(
+      product => product.name.trim().toLowerCase()
+    );
+
+  const uniqueNames =
+    new Set(names);
+
+
+  console.log(
+    `YOU KNOOWWW loaded ${allProducts.length} products.`
+  );
+
+
+  console.log(
+    `Unique product names: ${uniqueNames.size}`
+  );
+
+
+  if (allProducts.length !== 266) {
+
+    status.textContent =
+      `ERROR: Expected 266 products, found ${allProducts.length}.`;
+
+    status.style.color = "red";
+
+  }
+
+
+  renderProducts(displayedProducts);
+
+</script>
 
 </body>
 </html>
