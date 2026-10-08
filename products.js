@@ -6829,3 +6829,8 @@ if (uniqueNames.size !== 266) {
 /* Make the database available to the other HTML pages */
 window.youKnoowwwProducts = products;
 window.products = products;
+// Connect images to products by sequence: 001 → product 1, 002 → product 2 ... 266 → product 266
+products.forEach((product, index) => {
+    const imageNumber = String(index + 1).padStart(3, "0");
+    product.image = `images/${imageNumber}.jpg`;
+});
