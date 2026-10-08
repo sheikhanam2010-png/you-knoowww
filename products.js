@@ -6834,3 +6834,10 @@ products.forEach((product, index) => {
     const imageNumber = String(index + 1).padStart(3, "0");
     product.image = `images/${imageNumber}.jpg`;
 });
+products.forEach((product, index) => {
+    const n = index + 1;
+    product.image =
+        `https://image.pollinations.ai/prompt/${encodeURIComponent(
+            `professional product photo of ${product.name}, exact shoe model, single shoe, clean studio background`
+        )}?width=700&height=500&nologo=true&seed=${n}`;
+});
