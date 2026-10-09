@@ -4345,7 +4345,7 @@ const products = [
     name: "Salomon XT-4 OG",
     brand: "Salomon",
     category: "Footwear",
-    image: "",
+    image: "https://cdn.dam.salomon.com/a75fd742-624b-4924-8122-b37200a40ec3/L49217100/PNG-2000px-max-72dpi.png?auto=avif&bg-color=f5f5f5&canvas=116p%2C144p&fit=cover&format=pjpg&optimize=medium&width=3840",
     description: "Technical trail-inspired shoe with a strong outdoor design identity.",
     overview: "The XT-4 OG brings a technical trail-derived look to an outdoor and lifestyle-oriented shoe.",
     keyFeatures: [
@@ -4447,7 +4447,7 @@ const products = [
     name: "ASICS GEL-VENTURE 10",
     brand: "ASICS",
     category: "Footwear",
-    image: "",
+    image: "https://www.asics.co.in/media/catalog/product/1/0/1011b967_003_sl_lt_glb.jpg?width=1024",
     description: "Trail-inspired shoe designed for outdoor and mixed-surface use.",
     overview: "The GEL-VENTURE series combines outdoor-oriented traction with a versatile everyday shape.",
     keyFeatures: [
@@ -4549,7 +4549,7 @@ const products = [
     name: "HOKA Mafate 5",
     brand: "HOKA",
     category: "Footwear",
-    image: "",
+    image: "https://media.nz.hoka.com/cdn-cgi/image/fit%3Dscale-down%2Cf%3Dauto%2Cw%3D1280/products/a1c2d258-d7a7-4654-a118-f978ba7bea58/9f04b08f/1168722-mblw_mblw_01.jpg",
     description: "Trail-running shoe designed for demanding outdoor terrain.",
     overview: "The Mafate line combines a substantial trail platform with a grip-focused outsole for outdoor routes.",
     keyFeatures: [
