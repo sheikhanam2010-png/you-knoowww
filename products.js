@@ -6,7 +6,7 @@ const products = [
     name: "Nike Air Force 1 '07",
     brand: "Nike",
     category: "Footwear",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/NikeAirForceOne07.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NikeAirForceOne07.jpg/800px-NikeAirForceOne07.jpg",
     imageCredit: "Photo by Juicyfroot, CC BY-SA 3.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:NikeAirForceOne07.jpg)",
     description: "Classic low-top sneaker with basketball roots and everyday streetwear appeal.",
     overview: "The Air Force 1 '07 keeps the original court-inspired shape while using a clean low-top design suited to casual wear.",
