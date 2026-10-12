@@ -1,3 +1,5 @@
+const products = [
+  {
 id: "nike-air-force-1-07",
     name: "Nike Air Force 1 '07",
     brand: "Nike",
