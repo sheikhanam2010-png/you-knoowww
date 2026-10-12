@@ -260,14 +260,14 @@
     <footer>
         © 2026 you knoowww · Discover · Compare · Choose
     </footer>
-<script src="products.js?v=20261011-af1"></script>
+<script src="products.js?v=20261012-subcategory-fix"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const grid = document.getElementById("product-grid");
     const section = document.querySelector(".products");
     if (!grid || !section) return;
-    if (!window.products || window.products.length !== 266) {
+    if (!Array.isArray(window.products) || window.products.length === 0) {
         grid.innerHTML = "<p style='color:#aab3c9;'>Products could not be loaded.</p>";
         return;
     }
