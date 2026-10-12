@@ -264,123 +264,81 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
     const grid = document.getElementById("product-grid");
-
-    if (!grid) {
-        return;
-    }
-
+    const section = document.querySelector(".products");
+    if (!grid || !section) return;
     if (!window.products || window.products.length !== 266) {
-        grid.innerHTML =
-            "<p style='color:#aab3c9;'>Products could not be loaded.</p>";
+        grid.innerHTML = "<p style='color:#aab3c9;'>Products could not be loaded.</p>";
         return;
     }
-
-    grid.style.display = "grid";
-    grid.style.gridTemplateColumns = "repeat(3, 1fr)";
-    grid.style.gap = "18px";
-    grid.style.marginTop = "20px";
-
-    window.products.forEach(function (product, index) {
-
-        const card = document.createElement("a");
-
-        card.href =
-            "product.html?product=" +
-            encodeURIComponent(product.id);
-
-        card.style.display = "block";
-        card.style.padding = "22px";
-        card.style.borderRadius = "18px";
-        card.style.background = "rgba(255,255,255,0.04)";
-        card.style.border = "1px solid rgba(255,255,255,0.10)";
-        card.style.color = "white";
-        card.style.textDecoration = "none";
-        card.style.transition = "0.25s";
-
-        card.onmouseover = function () {
-            card.style.transform = "translateY(-4px)";
-            card.style.borderColor = "rgba(139,92,246,0.5)";
-        };
-
-        card.onmouseout = function () {
-            card.style.transform = "translateY(0)";
-            card.style.borderColor = "rgba(255,255,255,0.10)";
-        };
-
-        card.innerHTML = `
-            <div style="
-                height:160px;
-                border-radius:14px;
-                background:rgba(255,255,255,0.03);
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                overflow:hidden;
-                margin-bottom:15px;
-            ">
-                ${
-                    product.image
-                    ? `
-                        <img
-                            src="${product.image}"
-                            alt="${product.name}"
-                            style="
-                                width:100%;
-                                height:100%;
-                                object-fit:contain;
-                                padding:12px;
-                            "
-                        >
-                    `
-                    : `
-                        <span style="
-                            color:#737d95;
-                            font-size:13px;
-                        ">
-                            Product photo coming soon
-                        </span>
-                    `
-                }
-            </div>
-
-            <div style="
-                color:#8b5cf6;
-                font-size:12px;
-                font-weight:700;
-                margin-bottom:6px;
-            ">
-                #${String(index + 1).padStart(2, "0")}
-            </div>
-
-            <h3 style="
-                font-size:18px;
-                margin-bottom:6px;
-            ">
-                ${product.name}
-            </h3>
-
-            <div style="
-                color:#42d8e8;
-                font-size:13px;
-                margin-bottom:9px;
-            ">
-                ${product.brand}
-            </div>
-
-            <p style="
-                color:#aab3c9;
-                font-size:13px;
-                line-height:1.5;
-            ">
-                ${product.description}
-            </p>
-        `;
-
-        grid.appendChild(card);
+    const subcategories = [
+        { name: "Shoes", detail: "Sneakers, running, casual and formal shoes", icon: "👟" },
+        { name: "Heels", detail: "Heels and occasion footwear", icon: "👠" },
+        { name: "Flats & Sandals", detail: "Flats, sandals, juttis and mules", icon: "🩴" },
+        { name: "Slippers & Slides", detail: "Slippers, slides and flip-flops", icon: "🩴" },
+        { name: "Boots", detail: "Boots and football boots", icon: "🥾" }
+    ];
+    const counts = Object.fromEntries(subcategories.map(s => [s.name, window.products.filter(p => (p.subcategory || "Shoes") === s.name).length]));
+    section.innerHTML = `
+        <h2>Shop by Subcategory</h2>
+        <p>Choose a footwear type to explore the collection.</p>
+        <div id="subcategory-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px;text-align:left;"></div>
+        <button id="all-footwear" type="button" style="margin-top:20px;padding:11px 18px;border:1px solid rgba(139,92,246,.55);border-radius:999px;background:rgba(139,92,246,.16);color:#fff;font-weight:700;cursor:pointer;">View All Footwear (266)</button>
+        <h2 id="listing-title" style="margin-top:34px;">All Footwear (266)</h2>
+        <div id="product-grid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px;text-align:left;"></div>`;
+    const cards = section.querySelector("#subcategory-grid");
+    const listing = section.querySelector("#product-grid");
+    const listingTitle = section.querySelector("#listing-title");
+    subcategories.forEach(sub => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.style.cssText = "padding:20px 16px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#fff;text-align:left;cursor:pointer;min-height:130px;";
+        card.innerHTML = `<span style="font-size:25px" aria-hidden="true">${sub.icon}</span><strong style="display:block;margin:10px 0 5px;font-size:16px;">${sub.name}</strong><span style="display:block;color:#aab3c9;font-size:12px;line-height:1.5;">${sub.detail}</span><span style="display:block;color:#42d8e8;font-size:12px;margin-top:9px;">${counts[sub.name]} products</span>`;
+        card.addEventListener("click", () => renderProducts(sub.name));
+        cards.appendChild(card);
     });
-    });
+    function renderProducts(selected) {
+        const shown = selected ? window.products.filter(p => (p.subcategory || "Shoes") === selected) : window.products;
+        listingTitle.textContent = selected ? selected + " (" + shown.length + ")" : "All Footwear (" + shown.length + ")";
+        listing.innerHTML = "";
+        if (!shown.length) {
+            listing.style.display = "block";
+            listing.innerHTML = "<p style='color:#aab3c9;padding:18px 0;'>No products in this subcategory yet. This category is ready when matching products are added.</p>";
+            return;
+        }
+        listing.style.display = "grid";
+        shown.forEach(product => {
+            const index = window.products.indexOf(product);
+            const card = document.createElement("a");
+            card.href = "product.html?product=" + encodeURIComponent(product.id);
+            card.style.cssText = "display:block;padding:22px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);color:white;text-decoration:none;transition:transform .25s,border-color .25s;min-width:0;";
+            card.addEventListener("mouseenter", () => { card.style.transform = "translateY(-4px)"; card.style.borderColor = "rgba(139,92,246,.5)"; });
+            card.addEventListener("mouseleave", () => { card.style.transform = "translateY(0)"; card.style.borderColor = "rgba(255,255,255,.10)"; });
+            const imageWrap = document.createElement("div");
+            imageWrap.style.cssText = "height:160px;border-radius:14px;background:rgba(255,255,255,.03);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:15px;";
+            if (product.image) {
+                const img = document.createElement("img");
+                img.src = product.image; img.alt = product.name; img.loading = "lazy";
+                img.style.cssText = "width:100%;height:100%;object-fit:contain;padding:12px;";
+                img.addEventListener("error", () => { imageWrap.innerHTML = "<span style='color:#aab3c9;font-size:13px;'>Image unavailable</span>"; }, { once: true });
+                imageWrap.appendChild(img);
+            } else imageWrap.innerHTML = "<span style='color:#737d95;font-size:13px;'>Product photo coming soon</span>";
+            const number = document.createElement("div");
+            number.style.cssText = "color:#8b5cf6;font-size:12px;font-weight:700;margin-bottom:6px;";
+            number.textContent = "#" + String(index + 1).padStart(2, "0");
+            const title = document.createElement("h3"); title.style.cssText = "font-size:18px;margin-bottom:6px;overflow-wrap:anywhere;"; title.textContent = product.name;
+            const brand = document.createElement("div"); brand.style.cssText = "color:#42d8e8;font-size:13px;margin-bottom:9px;"; brand.textContent = product.brand;
+            const desc = document.createElement("p"); desc.style.cssText = "color:#aab3c9;font-size:13px;line-height:1.5;"; desc.textContent = product.description;
+            card.append(imageWrap, number, title, brand, desc);
+            listing.appendChild(card);
+        });
+    }
+    section.querySelector("#all-footwear").addEventListener("click", () => renderProducts(null));
+    const mobileStyle = document.createElement("style");
+    mobileStyle.textContent = "@media(max-width:800px){#product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}} @media(max-width:520px){#product-grid{grid-template-columns:1fr!important}}";
+    document.head.appendChild(mobileStyle);
+    renderProducts(null);
+});
 </script>
 </body>
 
