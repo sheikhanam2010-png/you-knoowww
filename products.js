@@ -9078,6 +9078,306 @@ id: "nike-air-force-1-07",
     thingsToConsider: "Replace this style-level entry with a verified retail model and matching image before presenting it as a specific purchasable product.",
     similarProducts: ["Other heel styles"],
     compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 101
+  {
+    id: "heel-style-101",
+    name: "Champagne Satin Evening Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Champagne Satin Evening Heels for formal, festive or occasion styling.",
+    overview: "Champagne Satin Evening Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 102
+  {
+    id: "heel-style-102",
+    name: "Black Rhinestone Evening Sandals",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Black Rhinestone Evening Sandals for formal, festive or occasion styling.",
+    overview: "Black Rhinestone Evening Sandals; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 103
+  {
+    id: "heel-style-103",
+    name: "Silver Rhinestone Evening Sandals",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Silver Rhinestone Evening Sandals for formal, festive or occasion styling.",
+    overview: "Silver Rhinestone Evening Sandals; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 104
+  {
+    id: "heel-style-104",
+    name: "Ivory Bridal Block Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Ivory Bridal Block Heels for formal, festive or occasion styling.",
+    overview: "Ivory Bridal Block Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 105
+  {
+    id: "heel-style-105",
+    name: "Pearl-Strap Bridal Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Pearl-Strap Bridal Heels for formal, festive or occasion styling.",
+    overview: "Pearl-Strap Bridal Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 106
+  {
+    id: "heel-style-106",
+    name: "Black Cut-Out Ankle Boots Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Black Cut-Out Ankle Boots Heels for formal, festive or occasion styling.",
+    overview: "Black Cut-Out Ankle Boots Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 107
+  {
+    id: "heel-style-107",
+    name: "Brown Suede Platform Pumps",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Brown Suede Platform Pumps for formal, festive or occasion styling.",
+    overview: "Brown Suede Platform Pumps; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 108
+  {
+    id: "heel-style-108",
+    name: "Cream Bow Slingback Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Cream Bow Slingback Heels for formal, festive or occasion styling.",
+    overview: "Cream Bow Slingback Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 109
+  {
+    id: "heel-style-109",
+    name: "Blue Satin Pointed Pumps",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Blue Satin Pointed Pumps for formal, festive or occasion styling.",
+    overview: "Blue Satin Pointed Pumps; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 110
+  {
+    id: "heel-style-110",
+    name: "Green Satin Stiletto Pumps",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Green Satin Stiletto Pumps for formal, festive or occasion styling.",
+    overview: "Green Satin Stiletto Pumps; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 111
+  {
+    id: "heel-style-111",
+    name: "Black Criss-Cross Strap Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Black Criss-Cross Strap Heels for formal, festive or occasion styling.",
+    overview: "Black Criss-Cross Strap Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 112
+  {
+    id: "heel-style-112",
+    name: "Tan Woven Wedge Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Tan Woven Wedge Heels for formal, festive or occasion styling.",
+    overview: "Tan Woven Wedge Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 113
+  {
+    id: "heel-style-113",
+    name: "Burgundy Velvet Pumps",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Burgundy Velvet Pumps for formal, festive or occasion styling.",
+    overview: "Burgundy Velvet Pumps; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 114
+  {
+    id: "heel-style-114",
+    name: "Gold Metallic Kitten Heels",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Gold Metallic Kitten Heels for formal, festive or occasion styling.",
+    overview: "Gold Metallic Kitten Heels; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
+  },
+  // Additional heel entry 115
+  {
+    id: "heel-style-115",
+    name: "Black Patent Platform Mary Janes",
+    brand: "Various",
+    category: "Footwear",
+    subcategory: "Heels",
+    image: "",
+    description: "Black Patent Platform Mary Janes for formal, festive or occasion styling.",
+    overview: "Black Patent Platform Mary Janes; style-level catalogue entry, not a verified manufacturer SKU.",
+    keyFeatures: ["Heel footwear", "Distinct silhouette or finish", "Check exact product details before purchase"],
+    material: "Varies by product; verify with the seller.",
+    sizeVariants: "Varies by seller and model.",
+    merits: ["Suitable for selected dressy outfits", "Can be compared by silhouette and heel type"],
+    demerits: ["Comfort depends on fit and heel height", "Specific retail model is not verified"],
+    bestFor: "Formal, festive or occasion outfits depending on style.",
+    thingsToConsider: "This is a style-level entry, not a verified retail model. Add a specific product and licensed matching image before presenting it as purchasable.",
+    similarProducts: ["Other heel styles"],
+    compareThisProduct: "Compare heel height, stability, materials and fit."
   }
 ];
 /* =========================================================
@@ -9090,13 +9390,13 @@ const normalizedNames = products.map(product =>
 
 const uniqueNames = new Set(normalizedNames);
 
-if (products.length !== 366) {
+if (products.length !== 381) {
   throw new Error(
-    `you knoowww requires exactly 366 products. Found ${products.length}.`
+    `you knoowww requires exactly 381 products. Found ${products.length}.`
   );
 }
 
-if (uniqueNames.size !== 366) {
+if (uniqueNames.size !== 381) {
   const duplicates = normalizedNames.filter(
     (name, index) => normalizedNames.indexOf(name) !== index
   );
