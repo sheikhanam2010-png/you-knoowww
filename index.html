@@ -198,6 +198,32 @@ nav {
     cursor: pointer;
 }
 
+#search-results {
+    max-width: 690px;
+    margin: 12px auto 0;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 16px;
+    background: #10162c;
+    text-align: left;
+    color: #eaf0ff;
+}
+#search-results[hidden] { display: none; }
+.search-result-link {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: #f4f6ff;
+    text-decoration: none;
+}
+.search-result-link:hover, .search-result-link:focus {
+    background: rgba(140,108,255,.18);
+    outline: 2px solid rgba(140,108,255,.45);
+}
+.search-result-meta { display:block; margin-top:4px; color:#aeb8d7; font-size:12px; }
+.search-message { padding: 10px 12px; color:#c4cbe0; font-size:14px; }
+
+
 /* ---------- TRUST STRIP ---------- */
 
 .trust {
@@ -546,13 +572,17 @@ footer {
             all in one place.
         </p>
 
-        <div class="search-box">
+        <form class="search-box" id="product-search" role="search">
             <input
-                type="text"
-                placeholder="Search for a product, brand or category..."
+                id="search-input"
+                type="search"
+                placeholder="Search products, brands or categories..."
+                aria-label="Search products, brands or categories"
+                autocomplete="off"
             >
-            <button>Search →</button>
-        </div>
+            <button type="submit">Search →</button>
+        </form>
+        <div id="search-results" role="status" aria-live="polite" hidden></div>
 
         <div class="trust">
             <span>✦ <b>Product Knowledge</b></span>
@@ -775,6 +805,79 @@ footer {
     </div>
 
 </footer>
+
+<script src="products.js?v=20261019-home-search"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("product-search");
+    const input = document.getElementById("search-input");
+    const results = document.getElementById("search-results");
+    if (!form || !input || !results) return;
+
+    function showMessage(message) {
+        results.replaceChildren();
+        const line = document.createElement("p");
+        line.className = "search-message";
+        line.textContent = message;
+        results.appendChild(line);
+        results.hidden = false;
+    }
+
+    function runSearch(event) {
+        event.preventDefault();
+        const query = input.value.trim().toLowerCase();
+        results.replaceChildren();
+        if (!query) {
+            showMessage("Type a product, brand or category to search.");
+            input.focus();
+            return;
+        }
+        if (!Array.isArray(window.products)) {
+            showMessage("Products could not be loaded. Please refresh and try again.");
+            return;
+        }
+
+        const matches = window.products.filter(function (product) {
+            return [product.name, product.brand, product.category, product.subcategory]
+                .some(function (value) {
+                    return String(value || "").toLowerCase().includes(query);
+                });
+        }).slice(0, 8);
+
+        if (!matches.length) {
+            showMessage("No matching products found. Try a different name, brand or category.");
+            return;
+        }
+
+        const heading = document.createElement("p");
+        heading.className = "search-message";
+        heading.textContent = "Search results (" + matches.length + (matches.length === 8 ? "+ shown" : " found") + ")";
+        results.appendChild(heading);
+
+        matches.forEach(function (product) {
+            const link = document.createElement("a");
+            link.className = "search-result-link";
+            link.href = "product.html?product=" + encodeURIComponent(product.id);
+            const name = document.createElement("strong");
+            name.textContent = product.name;
+            const meta = document.createElement("span");
+            meta.className = "search-result-meta";
+            meta.textContent = [product.brand, product.category, product.subcategory].filter(Boolean).join(" · ");
+            link.append(name, meta);
+            results.appendChild(link);
+        });
+        results.hidden = false;
+    }
+
+    form.addEventListener("submit", runSearch);
+    input.addEventListener("input", function () {
+        if (!input.value.trim()) {
+            results.hidden = true;
+            results.replaceChildren();
+        }
+    });
+});
+</script>
 
 </body>
 </html>
