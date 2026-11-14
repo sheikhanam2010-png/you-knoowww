@@ -753,7 +753,60 @@
         © 2026 you knoowww · Know the product before you choose it.
     </footer>
 
-<script src="products.js?v=20261114-jadon-details"></script>
+<script src="products.js?v=20261114-jadon-hotfix-2"></script>
+
+<script>
+/* Jadon safety override: keeps this product page accurate even if an older
+   cached products.js file is served by the browser or Pages CDN. */
+(function () {
+    const jadonDetails = {
+        id: "dr-martens-jadon-platform-boots",
+        name: "Dr. Martens Jadon Smooth Leather Platform Boots",
+        brand: "Dr. Martens",
+        category: "Footwear",
+        subcategory: "Boots",
+        description: "An eight-eye platform boot in Polished Smooth leather, with an inside zip, Goodyear-welted construction and a chunky Quad sole.",
+        overview: "The Jadon Boot is an elevated version of Dr. Martens' original boot silhouette. The Smooth Leather model uses Polished Smooth leather, an inside zip for easier on and off, yellow welt stitching, a black-and-yellow heel loop and the brand's grooved Quad platform sole.",
+        keyFeatures: [
+            "Eight-eye lace-up boot design",
+            "Polished Smooth leather upper",
+            "Inside zip fastening",
+            "Chunky Quad platform sole with grooved tread",
+            "Yellow welt stitching",
+            "Black-and-yellow scripted heel loop",
+            "Goodyear-welted construction with heat-sealed and reinforced welt stitching"
+        ],
+        material: "Upper: Polished Smooth leather. Sole: Quad platform sole. Dr. Martens describes Polished Smooth as its original durable leather with a smooth, polished finish. This is the leather Jadon version, not the separate vegan Jadon II model.",
+        sizeVariants: "Unisex sizing. Dr. Martens' US product page provides separate women's and men's size selectors; exact available sizes depend on current stock. Confirm the size conversion using the brand's size guide before ordering.",
+        merits: [
+            "Distinctive platform silhouette",
+            "Inside zip makes the boot easier to put on and take off",
+            "Lace-up front allows fit adjustment",
+            "Goodyear-welted construction",
+            "Polished Smooth leather can be cleaned and polished"
+        ],
+        demerits: [
+            "Platform sole is heavier and less flexible than many flat shoes",
+            "Smooth leather may need a break-in period",
+            "The raised sole may not suit people who prefer lightweight footwear",
+            "Leather requires suitable care"
+        ],
+        bestFor: "Everyday casual outfits and occasions where a substantial platform boot is wanted.",
+        thingsToConsider: "This listing describes the standard Smooth Leather Jadon, not Jadon Hi, Jadon Max, Patent, Pisa or Vegan versions. The brand's product page lists a 1.5-inch platform and 2-inch heel for this model; check current sizing and regional availability.",
+        similarProducts: [],
+        compareThisProduct: "Compare leather type, platform height, fastening, weight and sole construction with other Jadon versions.",
+        sourceUrl: "https://www.drmartens.com/us/en/jadon-boot-smooth-leather-platforms-black/p/15265001"
+    };
+    if (Array.isArray(window.products)) {
+        const index = window.products.findIndex(item => item.id === jadonDetails.id);
+        if (index >= 0) {
+            window.products[index] = Object.assign({}, window.products[index], jadonDetails);
+        } else {
+            window.products.push(jadonDetails);
+        }
+    }
+})();
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
