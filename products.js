@@ -9586,7 +9586,49 @@ id: "nike-air-force-1-07",
   {id:"timberland-heritage-waterproof-super-boot",name:"Timberland Heritage Waterproof Super Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Heritage Waterproof Super Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
   {id:"timberland-heritage-waterproof-chukka-boot",name:"Timberland Heritage Waterproof Chukka Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Heritage Waterproof Chukka Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
   {id:"timberland-redwood-falls-essential-waterproof-boot",name:"Timberland Redwood Falls Essential Waterproof Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Redwood Falls Essential Waterproof Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-gb/c/men/footwear/boots-10040"},
-  {id:"timberland-auburn-falls-6-inch-waterproof-boot",name:"Timberland Auburn Falls 6-Inch Waterproof Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Auburn Falls 6-Inch Waterproof Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-gb/c/men/footwear/boots-10040"},
+  {
+    id: "timberland-auburn-falls-6-inch-waterproof-boot",
+    name: "Timberland Auburn Falls 6-Inch Waterproof Boot",
+    brand: "Timberland",
+    category: "Footwear",
+    subcategory: "Boots",
+    image: "",
+    description: "A six-inch lace-up waterproof leather boot with seam-sealed construction, 200 g PrimaLoft insulation, an OrthoLite footbed and a rubber lug outsole.",
+    overview: "The Men's Auburn Falls 6-Inch Waterproof Boot is built for everyday city wear and outdoor paths. Its seam-sealed construction and waterproof Premium Timberland leather upper are designed to help keep feet dry. A padded collar, insulated lining and cushioned footbed add comfort, while the lug outsole provides grip.",
+    keyFeatures: [
+      "Waterproof, seam-sealed construction — helps keep water out",
+      "200 g PrimaLoft insulation for added warmth",
+      "Padded collar for ankle comfort",
+      "Fully gusseted tongue helps limit water and debris entering around the laces",
+      "OrthoLite footbed for cushioning",
+      "Rubber lug outsole for traction",
+      "Lace-up fastening for an adjustable fit"
+    ],
+    material: "Upper: waterproof Premium Timberland leather. Lining: ReBOTL fabric containing at least 50% recycled PET plastic. Footbed: OrthoLite. Outsole: rubber lug construction. The men's version also uses 200 g PrimaLoft insulation.",
+    sizeVariants: "Men's boot. Timberland lists Wheat Nubuck (style TB0A43CG754) and Black Nubuck (style TB0A43CGW05). The US product listing offers standard and wide width options. Exact sizes and stock vary by colour, region and retailer, so check the live size selector before buying.",
+    merits: [
+      "Waterproof leather upper with seam-sealed construction",
+      "Insulation adds warmth in colder conditions",
+      "OrthoLite footbed and padded collar support comfort",
+      "Rubber lug outsole is designed for reliable traction",
+      "ReBOTL lining incorporates recycled PET plastic"
+    ],
+    demerits: [
+      "The insulated construction may feel too warm in hot weather",
+      "A six-inch leather boot is bulkier than a low-cut everyday shoe",
+      "Leather requires appropriate cleaning and care",
+      "Fit and available widths should be checked before purchase"
+    ],
+    bestFor: "Everyday wear in cool or wet conditions, commuting and light outdoor paths where a waterproof, insulated boot is useful.",
+    thingsToConsider: "Check whether you want the Wheat Nubuck or Black Nubuck version, confirm your size and width with the retailer, and remember that waterproof construction is intended to help keep feet dry but does not make the boot suitable for submersion.",
+    similarProducts: [
+      "Timberland White Ledge Mid Waterproof Boot",
+      "Timberland Mt. Maddsen Mid Waterproof Hiking Boot",
+      "Timberland Euro Hiker"
+    ],
+    compareThisProduct: "Compare waterproof construction, insulation, ankle height, outsole grip and intended use with other Timberland boots.",
+    sourceUrl: "https://www.timberland.com/en-us/p/men/footwear-10039/mens-auburn-falls-6-inch-waterproof-boot-TB0A43CG754"
+  },
   {id:"timberland-britton-road-chelsea-boot",name:"Timberland Britton Road Chelsea Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Britton Road Chelsea Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-gb/c/men/footwear/boots-10040"},
   {id:"timberland-britton-road-waterproof-chukka-boot",name:"Timberland Britton Road Waterproof Chukka Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Britton Road Waterproof Chukka Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-gb/c/men/footwear/boots-10040"},
   {id:"timberland-euro-hiker",name:"Timberland Euro Hiker",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Euro Hiker boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
