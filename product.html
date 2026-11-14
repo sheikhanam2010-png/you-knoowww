@@ -999,37 +999,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
             container.innerHTML = "";
 
-            product.similarProducts.forEach(name => {
+            let similarNames = Array.isArray(product.similarProducts)
+                ? product.similarProducts
+                : [];
 
-                const similarProduct =
-                    window.products.find(
-                        item =>
-                            item.name.toLowerCase() ===
-                            name.toLowerCase()
-                    );
+            let similarItems = similarNames
+                .map(name => window.products.find(
+                    item => item.name.toLowerCase() === name.toLowerCase()
+                ))
+                .filter(item => item && item.id !== product.id);
 
-                const card =
-                    document.createElement("div");
+            // If this product has no valid similar-product matches,
+            // automatically show other boots already in the catalogue.
+            if (similarItems.length === 0) {
+                similarItems = window.products.filter(item =>
+                    item.id !== product.id &&
+                    item.category === "Footwear" &&
+                    item.subcategory === "Boots"
+                );
+            }
 
+            similarItems.slice(0, 3).forEach(similarProduct => {
+                const card = document.createElement("div");
                 card.className = "similar-card";
-
-                if (similarProduct) {
-
-                    card.innerHTML = `
-                        <a href="product.html?product=${similarProduct.id}">
-                            <strong>${similarProduct.name}</strong>
-                            <span>${similarProduct.brand}</span>
-                        </a>
-                    `;
-
-                } else {
-
-                    card.innerHTML = `
-                        <strong>${name}</strong>
-                        <span>Similar product</span>
-                    `;
-                }
-
+                card.innerHTML = `
+                    <a href="product.html?product=${similarProduct.id}">
+                        <strong>${similarProduct.name}</strong>
+                        <span>${similarProduct.brand}</span>
+                    </a>
+                `;
                 container.appendChild(card);
             });
         }
