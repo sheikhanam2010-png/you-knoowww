@@ -1389,6 +1389,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* ---------- COMPARE ---------- */
 
+    function compareText(value) {
+        return value && String(value).trim()
+            ? value
+            : "Details not added yet.";
+    }
+
+    function compareList(items) {
+        if (!Array.isArray(items) || items.length === 0) {
+            return "<li>Details not added yet.</li>";
+        }
+        return items.map(item => `<li>${item}</li>`).join("");
+    }
+
     runButton.addEventListener("click", function () {
 
         const selectedId =
@@ -1458,14 +1471,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     <tr>
                         <td class="label">Material</td>
-                        <td>${currentProduct.material}</td>
-                        <td>${secondProduct.material}</td>
+                        <td>${compareText(currentProduct.material)}</td>
+                        <td>${compareText(secondProduct.material)}</td>
                     </tr>
 
                     <tr>
                         <td class="label">Size & Variants</td>
-                        <td>${currentProduct.sizeVariants}</td>
-                        <td>${secondProduct.sizeVariants}</td>
+                        <td>${compareText(currentProduct.sizeVariants)}</td>
+                        <td>${compareText(secondProduct.sizeVariants)}</td>
                     </tr>
 
                     <tr>
@@ -1473,23 +1486,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <td>
                             <ul>
-                                ${currentProduct.keyFeatures
-                                    .map(
-                                        item =>
-                                            `<li>${item}</li>`
-                                    )
-                                    .join("")}
+                                ${compareList(currentProduct.keyFeatures)}
                             </ul>
                         </td>
 
                         <td>
                             <ul>
-                                ${secondProduct.keyFeatures
-                                    .map(
-                                        item =>
-                                            `<li>${item}</li>`
-                                    )
-                                    .join("")}
+                                ${compareList(secondProduct.keyFeatures)}
                             </ul>
                         </td>
                     </tr>
@@ -1499,23 +1502,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <td>
                             <ul>
-                                ${currentProduct.merits
-                                    .map(
-                                        item =>
-                                            `<li>${item}</li>`
-                                    )
-                                    .join("")}
+                                ${compareList(currentProduct.merits)}
                             </ul>
                         </td>
 
                         <td>
                             <ul>
-                                ${secondProduct.merits
-                                    .map(
-                                        item =>
-                                            `<li>${item}</li>`
-                                    )
-                                    .join("")}
+                                ${compareList(secondProduct.merits)}
                             </ul>
                         </td>
                     </tr>
@@ -1525,31 +1518,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <td>
                             <ul>
-                                ${currentProduct.demerits
-                                    .map(
-                                        item =>
-                                            `<li>${item}</li>`
-                                    )
-                                    .join("")}
+                                ${compareList(currentProduct.demerits)}
                             </ul>
                         </td>
 
                         <td>
                             <ul>
-                                ${secondProduct.demerits
-                                    .map(
-                                        item =>
-                                            `<li>${item}</li>`
-                                    )
-                                    .join("")}
+                                ${compareList(secondProduct.demerits)}
                             </ul>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="label">Best For</td>
-                        <td>${currentProduct.bestFor}</td>
-                        <td>${secondProduct.bestFor}</td>
+                        <td>${compareText(currentProduct.bestFor)}</td>
+                        <td>${compareText(secondProduct.bestFor)}</td>
                     </tr>
 
                     <tr>
@@ -1558,11 +1541,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         </td>
 
                         <td>
-                            ${currentProduct.thingsToConsider}
+                            ${compareText(currentProduct.thingsToConsider)}
                         </td>
 
                         <td>
-                            ${secondProduct.thingsToConsider}
+                            ${compareText(secondProduct.thingsToConsider)}
                         </td>
                     </tr>
 
