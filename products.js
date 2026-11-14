@@ -9594,47 +9594,121 @@ id: "nike-air-force-1-07",
     subcategory: "Boots",
     image: "",
     description: "A six-inch lace-up waterproof leather boot with seam-sealed construction, 200 g PrimaLoft insulation, an OrthoLite footbed and a rubber lug outsole.",
-    overview: "The Men's Auburn Falls 6-Inch Waterproof Boot is built for everyday city wear and outdoor paths. Its seam-sealed construction and waterproof Premium Timberland leather upper are designed to help keep feet dry. A padded collar, insulated lining and cushioned footbed add comfort, while the lug outsole provides grip.",
+    overview: "The Men's Auburn Falls 6-Inch Waterproof Boot combines a waterproof Premium Timberland leather upper with seam-sealed construction. Timberland lists a padded collar, 200 g PrimaLoft insulation, a ReBOTL fabric lining, an OrthoLite footbed and a rubber lug outsole.",
     keyFeatures: [
-      "Waterproof, seam-sealed construction — helps keep water out",
-      "200 g PrimaLoft insulation for added warmth",
-      "Padded collar for ankle comfort",
-      "Fully gusseted tongue helps limit water and debris entering around the laces",
-      "OrthoLite footbed for cushioning",
-      "Rubber lug outsole for traction",
-      "Lace-up fastening for an adjustable fit"
+      "Waterproof Premium Timberland leather upper",
+      "Seam-sealed construction",
+      "200 g PrimaLoft insulation",
+      "Padded collar",
+      "ReBOTL lining containing at least 50% recycled PET plastic",
+      "Fully gusseted tongue",
+      "OrthoLite footbed",
+      "Rubber lug outsole",
+      "Lace-up fastening"
     ],
-    material: "Upper: waterproof Premium Timberland leather. Lining: ReBOTL fabric containing at least 50% recycled PET plastic. Footbed: OrthoLite. Outsole: rubber lug construction. The men's version also uses 200 g PrimaLoft insulation.",
-    sizeVariants: "Men's boot. Timberland lists Wheat Nubuck (style TB0A43CG754) and Black Nubuck (style TB0A43CGW05). The US product listing offers standard and wide width options. Exact sizes and stock vary by colour, region and retailer, so check the live size selector before buying.",
+    material: "Upper: waterproof Premium Timberland leather. Lining: ReBOTL fabric containing at least 50% recycled PET plastic. Insulation: 200 g PrimaLoft. Footbed: OrthoLite. Outsole: rubber lug construction.",
+    sizeVariants: "Men's boot. Timberland's US listings include Wheat Nubuck (style TB0A43CG754) and Black Nubuck (style TB0A43CGW05), with wide widths shown. Exact sizes and stock vary by colour and region; check the live size selector.",
     merits: [
       "Waterproof leather upper with seam-sealed construction",
-      "Insulation adds warmth in colder conditions",
-      "OrthoLite footbed and padded collar support comfort",
-      "Rubber lug outsole is designed for reliable traction",
-      "ReBOTL lining incorporates recycled PET plastic"
+      "200 g PrimaLoft insulation",
+      "OrthoLite footbed and padded collar",
+      "Rubber lug outsole",
+      "ReBOTL lining contains recycled PET plastic"
     ],
     demerits: [
-      "The insulated construction may feel too warm in hot weather",
-      "A six-inch leather boot is bulkier than a low-cut everyday shoe",
-      "Leather requires appropriate cleaning and care",
-      "Fit and available widths should be checked before purchase"
+      "The insulation may feel warm in hot weather",
+      "A six-inch boot is bulkier than a low-cut shoe",
+      "Leather needs suitable care",
+      "Fit and available widths should be checked before buying"
     ],
-    bestFor: "Everyday wear in cool or wet conditions, commuting and light outdoor paths where a waterproof, insulated boot is useful.",
-    thingsToConsider: "Check whether you want the Wheat Nubuck or Black Nubuck version, confirm your size and width with the retailer, and remember that waterproof construction is intended to help keep feet dry but does not make the boot suitable for submersion.",
+    bestFor: "Everyday wear and outdoor walking in cool or wet conditions where a waterproof, insulated six-inch boot is suitable.",
+    thingsToConsider: "Choose the correct colour and style code, then confirm size and width with the retailer. Waterproof construction helps keep feet dry but does not make the boot suitable for submersion.",
     similarProducts: [
       "Timberland White Ledge Mid Waterproof Boot",
-      "Timberland Mt. Maddsen Mid Waterproof Hiking Boot",
-      "Timberland Euro Hiker"
+      "Timberland Mt. Maddsen Mid Waterproof Hiking Boot"
     ],
-    compareThisProduct: "Compare waterproof construction, insulation, ankle height, outsole grip and intended use with other Timberland boots.",
+    compareThisProduct: "Compare waterproofing, insulation, boot height, cushioning and outsole design with other Timberland boots.",
     sourceUrl: "https://www.timberland.com/en-us/p/men/footwear-10039/mens-auburn-falls-6-inch-waterproof-boot-TB0A43CG754"
   },
   {id:"timberland-britton-road-chelsea-boot",name:"Timberland Britton Road Chelsea Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Britton Road Chelsea Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-gb/c/men/footwear/boots-10040"},
   {id:"timberland-britton-road-waterproof-chukka-boot",name:"Timberland Britton Road Waterproof Chukka Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Britton Road Waterproof Chukka Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-gb/c/men/footwear/boots-10040"},
   {id:"timberland-euro-hiker",name:"Timberland Euro Hiker",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Euro Hiker boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
   {id:"timberland-euro-sprint-hiker",name:"Timberland Euro Sprint Hiker",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Euro Sprint Hiker boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
-  {id:"timberland-mt-maddsen-mid-waterproof-hiking-boot",name:"Timberland Mt. Maddsen Mid Waterproof Hiking Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Mt. Maddsen Mid Waterproof Hiking Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
-  {id:"timberland-white-ledge-mid-waterproof-boot",name:"Timberland White Ledge Mid Waterproof Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland White Ledge Mid Waterproof Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
+  {
+    id: "timberland-mt-maddsen-mid-waterproof-hiking-boot",
+    name: "Timberland Mt. Maddsen Mid Waterproof Hiking Boot",
+    brand: "Timberland",
+    category: "Footwear",
+    subcategory: "Boots",
+    image: "",
+    description: "A men's waterproof hiking boot with a Premium Timberland leather upper, TimberDry membrane, anti-fatigue footbed and rubber lug outsole.",
+    overview: "Timberland describes the Mt. Maddsen as a trail-focused waterproof hiking boot. Its waterproof Premium Timberland leather upper and TimberDry membrane help keep feet dry. A removable anti-fatigue footbed, compression-moulded EVA midsole and rubber lug outsole are designed for cushioning and traction.",
+    keyFeatures: [
+      "Waterproof Premium Timberland leather upper",
+      "TimberDry waterproof membrane",
+      "Fully gusseted tongue",
+      "ReBOTL lining containing at least 50% recycled plastic",
+      "Removable anti-fatigue footbed",
+      "Compression-moulded EVA midsole",
+      "Rubber lug outsole",
+      "Lace-up fastening"
+    ],
+    material: "Upper: waterproof Premium Timberland leather. Lining: ReBOTL fabric containing at least 50% recycled plastic. Midsole: compression-moulded EVA. Footbed: removable anti-fatigue footbed. Waterproofing: TimberDry membrane. Outsole: rubber lug construction.",
+    sizeVariants: "Men's model. Timberland offers different style codes and colour options; exact sizes, widths and stock vary by listing and region.",
+    merits: [
+      "Waterproof leather upper combined with TimberDry membrane",
+      "Removable anti-fatigue footbed",
+      "EVA midsole provides cushioning",
+      "Rubber lug outsole is designed for trail traction"
+    ],
+    demerits: [
+      "A mid hiking boot is bulkier than a low-cut shoe",
+      "Leather needs suitable care",
+      "Confirm the style code, fit and availability before purchase"
+    ],
+    bestFor: "Hiking and trail use where waterproofing, cushioning and a lug outsole are useful.",
+    thingsToConsider: "Check the exact style code, colour, size and width on the retailer's current listing. Waterproof construction helps keep feet dry but does not mean the boot is designed for submersion.",
+    similarProducts: [],
+    compareThisProduct: "Compare the waterproofing system, footbed, midsole cushioning and outsole with other hiking boots.",
+    sourceUrl: "https://www.timberland.com/en-us/p/men/footwear-10039/mens-mt-maddsen-waterproof-mid-hiking-boot-TB1A64TV231"
+  },
+  {
+    id: "timberland-white-ledge-mid-waterproof-boot",
+    name: "Timberland White Ledge Mid Waterproof Boot",
+    brand: "Timberland",
+    category: "Footwear",
+    subcategory: "Boots",
+    image: "",
+    description: "A men's waterproof mid hiking boot with a Premium Timberland leather upper, seam-sealed construction, EVA cushioning and a rubber lug outsole.",
+    overview: "Timberland describes the White Ledge as a waterproof hiking boot made for outdoor use. The leather upper and seam-sealed construction help keep feet dry. An EVA footbed and midsole provide cushioning, while the rubber lug outsole is designed for grip.",
+    keyFeatures: [
+      "Waterproof Premium Timberland leather upper",
+      "Seam-sealed construction",
+      "EVA footbed and EVA midsole",
+      "ReBOTL fabric lining containing at least 50% recycled plastic",
+      "Fully gusseted tongue",
+      "Lace-up fastening",
+      "Rubber lug outsole"
+    ],
+    material: "Upper: waterproof Premium Timberland leather. Lining: ReBOTL fabric containing at least 50% recycled plastic. Footbed and midsole: EVA. Outsole: rubber lug construction.",
+    sizeVariants: "Men's model. Timberland's US listing shows multiple colour and size options; exact sizes, widths and stock depend on the selected style and current regional listing.",
+    merits: [
+      "Waterproof leather upper and seam-sealed construction",
+      "EVA footbed and midsole provide cushioning",
+      "Rubber lug outsole is designed for trail grip",
+      "ReBOTL lining uses recycled plastic"
+    ],
+    demerits: [
+      "A mid hiking boot is bulkier than a low-cut shoe",
+      "Leather needs suitable care",
+      "Confirm fit, width and current availability with the retailer"
+    ],
+    bestFor: "Hiking and outdoor walking where a waterproof leather mid boot and lug outsole are useful.",
+    thingsToConsider: "Check the exact colour, size and width on the retailer's current product listing. The waterproof construction is intended to help keep feet dry, not make the boot suitable for submersion.",
+    similarProducts: [],
+    compareThisProduct: "Compare waterproof construction, cushioning, boot height and outsole design with other hiking boots.",
+    sourceUrl: "https://www.timberland.com/en-us/p/footwear-0100/mens-white-ledge-waterproof-mid-hiker-boot-TB114176231"
+  },
   {id:"timberland-chocorua-trail-mid-waterproof-boot",name:"Timberland Chocorua Trail Mid Waterproof Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Chocorua Trail Mid Waterproof Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.com/en-us/c/men/footwear/boots-10040"},
   {id:"timberland-radford-waterproof-mid-boot",name:"Timberland Radford Waterproof Mid Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Radford Waterproof Mid Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.co.jp/men-footwear/boots/"},
   {id:"timberland-redwood-edge-essential-chukka-boot",name:"Timberland Redwood Edge Essential Chukka Boot",brand:"Timberland",category:"Footwear",subcategory:"Boots",image:"",description:"Timberland Redwood Edge Essential Chukka Boot boot model.",overview:"Named boot model; consult the brand listing for current details.",keyFeatures:[],material:"Check brand listing.",sizeVariants:"Check brand listing.",merits:[],demerits:[],bestFor:"See manufacturer description.",thingsToConsider:"No image added. Confirm regional specifications before purchase.",similarProducts:[],compareThisProduct:"Compare fit, materials and intended use.",sourceUrl:"https://www.timberland.co.jp/men-footwear/boots/"},
